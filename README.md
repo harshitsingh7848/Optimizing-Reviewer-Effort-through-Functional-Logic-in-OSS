@@ -14,7 +14,7 @@ The pipeline has three stages:
 
 1. **Data Collection** - Fetch 500 merged PRs from GitHub, compute structural and AST-based code complexity features, and store everything in `pr_dataset.json`.
 2. **LLM Judging & Evaluation** - Three local LLMs score each PR's review effort on a 1-5 rubric. Predictions are evaluated against a ground-truth effort label derived from review duration and comment count.
-3. **Visualization** - Generate plots comparing model performance, risk score distributions, circularity checks, and McNemar contingency tables.
+3. **Visualization** - Generate plots comparing model performance, risk score distributions, circularity checks, and McNemar result tables.
 
 ---
 
@@ -167,7 +167,7 @@ Most input features show weak-to-moderate correlation with the effort label. Log
 |------|-------------|
 | `metrics.png` | Precision, Recall, and F1 grouped bar chart by model |
 | `circularity_check.png` | Spearman ρ for each feature vs ground-truth effort |
-| `mcnemar_results.png` | McNemar contingency tables (LLM-J vs RF) per model |
+| `mcnemar_results.png` | McNemar results tables (LLM-J vs RF) per model |
 | `risk_distribution.png` | Risk score distribution histograms per model |
 
 ---
