@@ -114,11 +114,11 @@ A Random Forest classifier (100 trees, 80/20 stratified split) trained on four f
 
 ### Statistical Comparison
 
-McNemar's test (exact, two-sided) compares disagreement patterns between the LLM judge and RF baseline on the shared test set.
+McNemar's test compares disagreement patterns between the LLM judge and RF baseline on the test set.
 
 ### Circularity Check
 
-Spearman rank correlation between each input feature and the ground-truth effort score, to verify that the LLM is not simply echoing features already embedded in the label.
+Spearman rank correlation between each input feature and the ground-truth effort score, to verify that the LLM is not simply showing features already present in the label.
 
 ---
 
@@ -165,10 +165,10 @@ Most input features show weak-to-moderate correlation with the effort label. Log
 
 | Plot | Description |
 |------|-------------|
-| `plot1_metrics.png` | Precision, Recall, and F1 grouped bar chart by model |
-| `plot2_circularity.png` | Spearman ρ for each feature vs ground-truth effort |
-| `plot3_mcnemar.png` | McNemar contingency tables (LLM-J vs RF) per model |
-| `plot4_risk_dist.png` | Risk score distribution histograms per model |
+| `metrics.png` | Precision, Recall, and F1 grouped bar chart by model |
+| `circularity_check.png` | Spearman ρ for each feature vs ground-truth effort |
+| `mcnemar_results.png` | McNemar contingency tables (LLM-J vs RF) per model |
+| `risk_distribution.png` | Risk score distribution histograms per model |
 
 ---
 
