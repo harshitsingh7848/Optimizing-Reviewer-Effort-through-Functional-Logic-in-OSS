@@ -4,3 +4,5 @@ pr_dataset_checkpoint.json
 llm_judge_results.json
 huggingface_test.py
 config.py
+*.json
+*.png
