@@ -294,38 +294,43 @@ def plot_risk_distribution(data: dict, rq: int, repo: str, out: str):
 # ── Plot 5: RQ2-only — high-risk vs low-risk segment counts ──────────────────
 
 def plot_rq2_segment_breakdown(data: dict, repo: str, out: str):
-    md   = data["metrics"]
-    keys = model_keys_with(data, "llm_j")
+    md          = data["metrics"]
+    all_results = data.get("results", [])
+    keys        = model_keys_with(data, "llm_j")
     if not keys:
-        print("  [skip] plot_rq2_segment_breakdown.")
         return
 
     labels    = [dn(k) for k in keys]
-    high_risk = [md[k]["n_high_risk"] for k in keys]
-    low_risk  = [md[k]["n_low_risk"]  for k in keys]
-    x         = np.arange(len(keys))
-    width     = 0.35
+    gt_high   = [md[k]["n_high_risk"] for k in keys]   # same for all — 207
+    pred_high = []
+    for k in keys:
+        model_results = [r for r in all_results
+                         if r.get("model_name") == k
+                         and isinstance(r.get("risk_score"), int)]
+        pred_high.append(sum(1 for r in model_results if r["risk_score"] >= 4))
+
+    x     = np.arange(len(keys))
+    width = 0.35
 
     fig, ax = plt.subplots(figsize=(8, 4.5))
-    b1 = ax.bar(x - width / 2, high_risk, width, label="High-Risk",
-                color=RED,   zorder=3, edgecolor="white")
-    b2 = ax.bar(x + width / 2, low_risk,  width, label="Low-Risk",
-                color=GREEN, zorder=3, edgecolor="white")
+    b1 = ax.bar(x - width/2, gt_high,   width, label="Actual High-Risk (GT)",
+                color=NAVY, zorder=3, edgecolor="white")
+    b2 = ax.bar(x + width/2, pred_high, width, label="Predicted High-Risk (LLM)",
+                color=RED,  zorder=3, edgecolor="white")
 
     for bars in (b1, b2):
         for bar in bars:
             ax.text(bar.get_x() + bar.get_width() / 2,
-                    bar.get_height() + 10,
+                    bar.get_height() + 2,
                     str(int(bar.get_height())),
-                    ha="center", va="bottom",
-                    fontsize=9, fontweight="bold")
+                    ha="center", va="bottom", fontsize=9, fontweight="bold")
 
     ax.set_xticks(x)
     ax.set_xticklabels(labels, fontsize=11, fontweight="bold")
     ax.set_ylabel("Number of Segments", fontsize=11)
     ax.set_title(
-        f"RQ2: High-Risk vs Low-Risk Segment Counts  ({repo})\n"
-        f"(Ground truth: inline reviewer comment anchored to segment)",
+        f"RQ2: Actual vs Predicted High-Risk Segments  ({repo})\n"
+        f"(Threshold ≥ 4 for LLM prediction  |  GT = inline reviewer comment)",
         fontsize=11, fontweight="bold", pad=10,
     )
     ax.yaxis.grid(True, color=LGRAY, linewidth=0.8, zorder=0)
