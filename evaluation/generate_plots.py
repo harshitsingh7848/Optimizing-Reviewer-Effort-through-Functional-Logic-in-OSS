@@ -1,17 +1,3 @@
-"""
-plot_results.py
-===============
-Unified plotting script for RQ1 and RQ2 results.
-
-Usage:
-    python plot_results.py --rq1 results/llm_judge_results_pandas.json --repo pandas-dev/pandas
-    python plot_results.py --rq1 results/llm_judge_results_django.json --repo django/django
-    python plot_results.py --rq2 results/llm_judge_rq2_results.json    --repo django/django
-    python plot_results.py --rq1 results/llm_judge_results_django.json \
-                           --rq2 results/llm_judge_rq2_results.json    \
-                           --repo django/django --outdir figures
-"""
-
 import argparse
 import json
 import os
@@ -20,7 +6,6 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from collections import Counter
 
-# ── Palette ───────────────────────────────────────────────────────────────────
 NAVY   = "#065A82"
 TEAL   = "#1C7293"
 ACCENT = "#F59E0B"
@@ -44,7 +29,6 @@ CIRCULARITY_LABELS = {
 }
 
 
-# ── Helpers ───────────────────────────────────────────────────────────────────
 
 def load(path: str) -> dict:
     with open(path, encoding="utf-8") as f:
@@ -64,8 +48,6 @@ def save(fig, path: str):
     plt.close(fig)
     print(f"  Saved: {path}")
 
-
-# ── Plot 1: Precision / Recall / F1 ──────────────────────────────────────────
 
 def plot_metrics(data: dict, rq: int, repo: str, out: str):
     """Works for both RQ1 (PR-level) and RQ2 (segment-level)."""
@@ -133,8 +115,6 @@ def plot_metrics(data: dict, rq: int, repo: str, out: str):
     save(fig, out)
 
 
-# ── Plot 2: Circularity check (RQ1 only) ─────────────────────────────────────
-
 def plot_circularity(data: dict, repo: str, out: str):
     md        = data["metrics"]
     first_key = next((k for k in md if "circularity_check" in md[k]), None)
@@ -179,8 +159,6 @@ def plot_circularity(data: dict, repo: str, out: str):
     plt.tight_layout()
     save(fig, out)
 
-
-# ── Plot 3: McNemar heatmap ───────────────────────────────────────────────────
 
 def plot_mcnemar(data: dict, rq: int, repo: str, out: str):
     md   = data["metrics"]
@@ -228,8 +206,6 @@ def plot_mcnemar(data: dict, rq: int, repo: str, out: str):
     plt.tight_layout()
     save(fig, out)
 
-
-# ── Plot 4: Risk score distribution ──────────────────────────────────────────
 
 def plot_risk_distribution(data: dict, rq: int, repo: str, out: str):
     md          = data["metrics"]
@@ -291,8 +267,6 @@ def plot_risk_distribution(data: dict, rq: int, repo: str, out: str):
     save(fig, out)
 
 
-# ── Plot 5: RQ2-only — high-risk vs low-risk segment counts ──────────────────
-
 def plot_rq2_segment_breakdown(data: dict, repo: str, out: str):
     md          = data["metrics"]
     all_results = data.get("results", [])
@@ -301,7 +275,7 @@ def plot_rq2_segment_breakdown(data: dict, repo: str, out: str):
         return
 
     labels    = [dn(k) for k in keys]
-    gt_high   = [md[k]["n_high_risk"] for k in keys]   # same for all — 207
+    gt_high   = [md[k]["n_high_risk"] for k in keys]
     pred_high = []
     for k in keys:
         model_results = [r for r in all_results
@@ -340,9 +314,6 @@ def plot_rq2_segment_breakdown(data: dict, repo: str, out: str):
     plt.tight_layout()
     save(fig, out)
 
-
-# ── Runners ───────────────────────────────────────────────────────────────────
-
 def run_rq1(path: str, repo: str, prefix: str):
     print(f"\n── RQ1 plots from {path} ──")
     data = load(path)
@@ -361,7 +332,6 @@ def run_rq2(path: str, repo: str, prefix: str):
     plot_rq2_segment_breakdown(data,          repo=repo, out=f"{prefix}_segment_breakdown.png")
 
 
-# ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
     parser = argparse.ArgumentParser(description="Plot RQ1 and/or RQ2 results.")

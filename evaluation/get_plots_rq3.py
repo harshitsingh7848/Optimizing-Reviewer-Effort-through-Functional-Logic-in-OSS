@@ -3,7 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 
-# ── Style constants (match your existing plots) ─────────────────────
 NAVY  = "#21295C"
 DARK  = "#065A82"
 TEAL  = "#1C7293"
@@ -13,7 +12,7 @@ LGRAY = "#E5E5E5"
 WHITE = "#FFFFFF"
 
 MODELS = ["Qwen2.5-7B", "Llama3.1-8B", "Gemma3-4B"]
-RHO    = [-0.0835,      -0.0113,        -0.0475]   # from your results
+RHO    = [-0.0835,      -0.0113,        -0.0475]
 PVALS  = [ 0.0622,       0.8012,         0.2890]
 
 def save(fig, path):
@@ -21,7 +20,6 @@ def save(fig, path):
     plt.close(fig)
     print(f"Saved: {path}")
 
-# ── Plot 1: GT Strategy Comparison ──────────────────────────────────
 fig, ax = plt.subplots(figsize=(8, 4.5))
 labels   = ["Revert-Only\n(Precise)", "Bugfix/Security\nFile-Overlap (Broad)"]
 counts   = [0, 140]

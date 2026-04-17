@@ -72,7 +72,6 @@ def plot_dataset(data: list[dict], label: str, color: str, out_path: Path) -> No
         ax_hist = fig.add_subplot(gs[row_idx, 0])
         ax_cdf  = fig.add_subplot(gs[row_idx, 1])
 
-        # ── Histogram ──────────────────────────────────────────────────────
         cap     = np.percentile(arr, 99) if len(arr) > 1 else arr.max()
         clipped = np.clip(arr, 0, cap)
         n_bins  = min(50, max(10, len(arr) // 8))
@@ -92,12 +91,10 @@ def plot_dataset(data: list[dict], label: str, color: str, out_path: Path) -> No
         ax_hist.set_ylabel("Number of PRs")
         ax_hist.legend(fontsize=8)
 
-        # Shade the "high effort" region (above Q80) in the histogram
         q80 = np.percentile(arr, 80)
         ax_hist.axvspan(q80, cap, alpha=0.12, color="purple",
                         label="_high effort zone")
 
-        # ── Cumulative % curve (shows what % is below each threshold) ──────
         sorted_arr = np.sort(arr)
         cdf        = np.arange(1, len(sorted_arr) + 1) / len(sorted_arr) * 100
 
@@ -105,7 +102,7 @@ def plot_dataset(data: list[dict], label: str, color: str, out_path: Path) -> No
 
         for pct in PERCENTILES_TO_CHECK:
             cutoff   = np.percentile(arr, pct)
-            pct_high = 100 - pct          # % labelled HIGH effort
+            pct_high = 100 - pct          
             ax_cdf.scatter(cutoff, pct, color="grey", s=40, zorder=5)
             ax_cdf.annotate(
                 f"Q{pct}: {cutoff:.0f} {unit}\n→ {pct_high:.0f}% high",
@@ -116,7 +113,6 @@ def plot_dataset(data: list[dict], label: str, color: str, out_path: Path) -> No
                 color="dimgrey",
             )
 
-        # Highlight Q75 and Q80
         for pct, lc, ls in [(75, "red", "--"), (80, "purple", ":")]:
             cutoff = np.percentile(arr, pct)
             ax_cdf.axhline(pct, color=lc, linestyle=ls, linewidth=1.2, alpha=0.7)
@@ -129,7 +125,6 @@ def plot_dataset(data: list[dict], label: str, color: str, out_path: Path) -> No
         ax_cdf.set_ylim(0, 105)
         ax_cdf.grid(True, alpha=0.3)
 
-        # ── Console table ───────────────────────────────────────────────────
         print_threshold_table(arr.tolist(), metric_label, label)
 
     OUT_DIR.mkdir(exist_ok=True)
@@ -157,7 +152,6 @@ def plot_comparison(datasets: dict[str, list[dict]]) -> None:
             cdf        = np.arange(1, len(sorted_arr) + 1) / len(sorted_arr) * 100
             ax.plot(sorted_arr, cdf, color=color, linewidth=2, label=label)
 
-            # Mark Q80 for each dataset
             q80 = np.percentile(arr, 80)
             ax.scatter(q80, 80, color=color, s=60, zorder=6)
             ax.annotate(f"Q80={q80:.0f}", xy=(q80, 80),
