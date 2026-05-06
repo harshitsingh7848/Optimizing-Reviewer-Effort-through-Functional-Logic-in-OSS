@@ -6,6 +6,7 @@ from sklearn.metrics import precision_score, recall_score, f1_score, classificat
 from src.get_baseline_model import compute_rf_baseline
 from statsmodels.stats.contingency_tables import mcnemar as mcnemar_test
 from src.get_spearman_correlation import check_circularity
+import argparse
 
 
 SYSTEM_PROMPT = """You are an expert software engineering reviewer.
@@ -147,10 +148,17 @@ def run_mcnemar(llm_preds: list, rf_preds: list, gt: list) -> tuple:
 
 
 def evaluate(input_path: str = "pr_dataset_django.json",
-             output_path: str = "llm_judge_results_django.json"):
+             output_path: str = "llm_judge_results_django.json", limit: int = None,
+             models: list = None):
 
     with open(input_path, encoding="utf-8") as f:
         dataset = json.load(f)
+    
+    if limit is not None:
+        dataset = dataset[:limit]
+        print(f"Limiting to first {limit} PRs (demo mode)")
+    
+    models_to_use = models if models else MODELS
 
     effort_values_all = compute_effort_scores(dataset)
     effort_q80 = np.percentile(effort_values_all, 80)    
@@ -167,7 +175,7 @@ def evaluate(input_path: str = "pr_dataset_django.json",
     results = []
     for i, pr in enumerate(dataset):
         print(f"Judging PR {i+1}/{len(dataset)}: id={pr.get('pr_id', '?')}")
-        for model_name in MODELS:
+        for model_name in models_to_use:
             verdict = call_llm_judge(pr, model_name)
             results.append({
                 "pr_id":                 pr.get("pr_id"),
@@ -186,7 +194,7 @@ def evaluate(input_path: str = "pr_dataset_django.json",
 
     all_metrics = {}
 
-    for model_name in MODELS:
+    for model_name in models_to_use:
         print(f"\n{'='*50}")
         print(f"Evaluating: {model_name}")
         print(f"{'='*50}")
@@ -201,15 +209,15 @@ def evaluate(input_path: str = "pr_dataset_django.json",
             failed = [r for r in model_data if not isinstance(r["risk_score"], int)]
             print(f"  Example failure  : {failed[0]['rationale'][:200]}")
 
-        if len(valid) < 10:
-            print(f"  Not enough valid PRs for evaluation.")
-            all_metrics[model_name] = {
-                "note": "Not enough valid PRs.",
-                "total": len(model_data),
-                "valid": len(valid),
-                "failed": len(model_data) - len(valid)
-            }
-            continue
+        # if len(valid) < 10:
+        #     print(f"  Not enough valid PRs for evaluation.")
+        #     all_metrics[model_name] = {
+        #         "note": "Not enough valid PRs.",
+        #         "total": len(model_data),
+        #         "valid": len(valid),
+        #         "failed": len(model_data) - len(valid)
+        #     }
+        #     continue
 
         gt_labels = [gt_lookup[r["pr_id"]] for r in valid]
         effort_values = [float(r.get("total_comments", 0)) for r in valid]
@@ -276,4 +284,19 @@ def evaluate(input_path: str = "pr_dataset_django.json",
 
 
 if __name__ == "__main__":
-    evaluate()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dataset", required=True,
+                        help="Input PR dataset JSON file")
+    parser.add_argument("--out", required=True,
+                        help="Output results JSON file")
+    parser.add_argument("--limit", type=int, default=None,
+                        help="Limit to first N PRs (for demo)")
+    parser.add_argument("--models", default=None,
+                        help="Comma-separated model names (default: all three)")
+    args = parser.parse_args()
+    evaluate(
+        input_path=args.dataset,
+        output_path=args.out,
+        limit=args.limit,
+        models=args.models.split(",") if args.models else None,
+    )

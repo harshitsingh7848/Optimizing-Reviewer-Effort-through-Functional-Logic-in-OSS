@@ -175,7 +175,7 @@ def compute_pr_ast_features(details, files, repository_path):
     }
 
 
-def main(repository_path: str, out_file_path: str, checkpoint_file_path: str):
+def main(repository_path: str, out_file_path: str, checkpoint_file_path: str, target_valid_prs: int = TARGET_VALID_PRS):
     try:
         with open(checkpoint_file_path, encoding="utf-8") as f:
             results = json.load(f)
@@ -188,9 +188,9 @@ def main(repository_path: str, out_file_path: str, checkpoint_file_path: str):
     page         = 1
     raw_seen     = 0
 
-    print(f"Collecting {TARGET_VALID_PRS} valid PRs from {repository_path}\n")
+    print(f"Collecting {target_valid_prs} valid PRs from {repository_path}\n")
 
-    while len(results) < TARGET_VALID_PRS:
+    while len(results) < target_valid_prs:
         batch = get_pr_page(repository_path, page)
 
         if not batch:
@@ -199,13 +199,13 @@ def main(repository_path: str, out_file_path: str, checkpoint_file_path: str):
             break
 
         print(f"Page {page}: fetched {len(batch)} PRs "
-              f"(valid so far: {len(results)}/{TARGET_VALID_PRS})")
+              f"(valid so far: {len(results)}/{target_valid_prs})")
         raw_seen += len(batch)
         page     += 1
         time.sleep(0.5)
 
         for pr in batch:
-            if len(results) >= TARGET_VALID_PRS:
+            if len(results) >= target_valid_prs:
                 break
 
             pr_number = pr["number"]
@@ -230,7 +230,7 @@ def main(repository_path: str, out_file_path: str, checkpoint_file_path: str):
                 skipped += 1; continue
 
 
-            print(f"Valid PR {len(results) + 1}/{TARGET_VALID_PRS}: #{pr_number}")
+            print(f"Valid PR {len(results) + 1}/{target_valid_prs}: #{pr_number}")
 
             diff_text = "\n".join(
                 f"--- a/{f.get('filename','')}\n+++ b/{f.get('filename','')}\n{f.get('patch', '')}"
@@ -272,8 +272,8 @@ def main(repository_path: str, out_file_path: str, checkpoint_file_path: str):
     print(f"\nRaw PRs seen    : {raw_seen}")
     print(f"Valid collected  : {len(results)}")
     print(f"Skipped          : {skipped}")
-    if len(results) < TARGET_VALID_PRS:
-        print(f"WARNING: only {len(results)}/{TARGET_VALID_PRS} valid PRs found. "
+    if len(results) < target_valid_prs:
+        print(f"WARNING: only {len(results)}/{target_valid_prs} valid PRs found. "
               f"The repo may not have enough qualifying PRs.")
 
     with open(out_file_path, "w", encoding="utf-8") as f:
@@ -289,5 +289,6 @@ if __name__ == "__main__":
                         help="Output dataset JSON file")
     parser.add_argument("--checkpoint_file",  default="pr_dataset_checkpoint.json",
                         help="Checkpoint file for resuming interrupted runs")
+    parser.add_argument("--limit", type=int, default=TARGET_VALID_PRS, help=f"Number of valid PRs to collect (default: {TARGET_VALID_PRS})")
     args = parser.parse_args()
-    main(args.repository, args.out_file, args.checkpoint_file)
+    main(args.repository, args.out_file, args.checkpoint_file, args.limit)

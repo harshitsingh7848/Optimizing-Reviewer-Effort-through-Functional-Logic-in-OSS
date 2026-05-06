@@ -119,7 +119,7 @@ def plot_circularity(data: dict, repo: str, out: str):
     md        = data["metrics"]
     first_key = next((k for k in md if "circularity_check" in md[k]), None)
     if first_key is None:
-        print("  [skip] plot_circularity — no circularity_check data (RQ2 doesn't have this).")
+        print("  [skip] plot_circularity — no circularity_check data")
         return
 
     circ        = md[first_key]["circularity_check"]
