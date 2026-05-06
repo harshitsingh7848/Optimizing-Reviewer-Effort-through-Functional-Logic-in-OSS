@@ -1,0 +1,4502 @@
+[
+  {
+    "pr_id": 3503528450,
+    "pr_number": 21075,
+    "merged_at": "2026-04-08T17:34:02Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3499854955,
+    "pr_number": 21070,
+    "merged_at": "2026-04-08T12:44:06Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3489581578,
+    "pr_number": 21056,
+    "merged_at": "2026-04-06T17:04:33Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "33bfc66add643f49d466c5a646989ad91677753d",
+    "commit_message": "fixed #37023 -- made xml serializer put each manytomanyfield object on its own line."
+  },
+  {
+    "pr_id": 3487187281,
+    "pr_number": 21051,
+    "merged_at": "2026-04-07T19:38:35Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "3157285e27a426530ef571855e0e29c317e210df",
+    "commit_message": "fixed #27150 -- made base file objects truthy by default."
+  },
+  {
+    "pr_id": 3486295996,
+    "pr_number": 21050,
+    "merged_at": "2026-04-03T13:30:10Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3481532860,
+    "pr_number": 21046,
+    "merged_at": "2026-04-03T13:37:32Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "3b161e60964aff99eddcd2627a486d81c1836b3a",
+    "commit_message": "fixed #37016 -- avoided propagating invalid arguments from when() to q()."
+  },
+  {
+    "pr_id": 3477315271,
+    "pr_number": 21045,
+    "merged_at": "2026-04-02T13:00:55Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "953c238058c0ce387a1a41cb491bfc1875d73ad0",
+    "commit_message": "fixed cve-2026-33034 -- enforced data_upload_max_memory_size on body size in asgi requests.\n\nthe `body` property in `htt"
+  },
+  {
+    "pr_id": 3469267644,
+    "pr_number": 21036,
+    "merged_at": "2026-04-01T17:51:37Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "856c915326768962806705ca7733e4abbb8f794f",
+    "commit_message": "fixed #37004 -- used queryset.totally_ordered in basemodelformset.get_queryset() for stable ordering."
+  },
+  {
+    "pr_id": 3469061878,
+    "pr_number": 21035,
+    "merged_at": "2026-04-02T15:09:37Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "280256499c5b2d636949f3c8cb52159a8e4c26bb",
+    "commit_message": "refs cve-2026-4292 -- isolated new test in adminviewlisteditable.\n\nas originally written, this test interfered with\nadmi"
+  },
+  {
+    "pr_id": 3466725468,
+    "pr_number": 21029,
+    "merged_at": "2026-03-30T19:56:52Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3449981784,
+    "pr_number": 20998,
+    "merged_at": "2026-03-26T19:21:00Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3430905653,
+    "pr_number": 20964,
+    "merged_at": "2026-03-24T12:56:36Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "b38cddf8f9d9dfe7a80e8d05c2295c69bdee68f0",
+    "commit_message": "fixed #36985 -- skipped createextension backwards operation on non-postgresql databases."
+  },
+  {
+    "pr_id": 3428578264,
+    "pr_number": 20960,
+    "merged_at": "2026-03-25T13:23:10Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "856c915326768962806705ca7733e4abbb8f794f",
+    "commit_message": "fixed #37004 -- used queryset.totally_ordered in basemodelformset.get_queryset() for stable ordering."
+  },
+  {
+    "pr_id": 3422087379,
+    "pr_number": 20948,
+    "merged_at": "2026-04-11T12:54:08Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3400069893,
+    "pr_number": 20911,
+    "merged_at": "2026-03-20T20:31:25Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "994fa7780d73f6d618dc3a03339e96b5353b4e71",
+    "commit_message": "fixed #36960 -- enabled the use of psycopg 3's optimized timestamp loader.\n\nbased on daniele varrazzo's comment in https"
+  },
+  {
+    "pr_id": 3397084718,
+    "pr_number": 20901,
+    "merged_at": "2026-03-18T12:22:29Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "2e33abe57c37dce6ce5eff9e6cbaf47cdddcf1e3",
+    "commit_message": "fixed #36987 -- observed prepared argument in uuidfield.get_db_prep_value().\n\nthis avoids two isinstance() calls per uui"
+  },
+  {
+    "pr_id": 3397038627,
+    "pr_number": 20900,
+    "merged_at": "2026-03-14T18:11:27Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "6b90f8a8d6994dc62cd91dde911fe56ec3389494",
+    "commit_message": "refs #12529, #22325 -- fixed executortests.test_custom_user isolation."
+  },
+  {
+    "pr_id": 3379948012,
+    "pr_number": 20890,
+    "merged_at": "2026-03-13T14:49:38Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3379564676,
+    "pr_number": 20889,
+    "merged_at": "2026-04-02T19:54:23Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "953c238058c0ce387a1a41cb491bfc1875d73ad0",
+    "commit_message": "fixed cve-2026-33034 -- enforced data_upload_max_memory_size on body size in asgi requests.\n\nthe `body` property in `htt"
+  },
+  {
+    "pr_id": 3374023699,
+    "pr_number": 20882,
+    "merged_at": "2026-03-17T01:08:17Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "9391beeb8799a4b7deb4bb3048bd63465a0e96ef",
+    "commit_message": "fixed #37020 -- removed guidance to edit fetched .po files by hand.\n\naltering the .po files by hand was causing incorrec"
+  },
+  {
+    "pr_id": 3373360086,
+    "pr_number": 20881,
+    "merged_at": "2026-03-09T15:17:44Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "9c21dd91a3bc5d4278adfff98c7a5225947cd049",
+    "commit_message": "fixed a typo in tests/conditional_processing/tests.py."
+  },
+  {
+    "pr_id": 3371267403,
+    "pr_number": 20877,
+    "merged_at": "2026-03-10T15:32:39Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "3483bfc0920b0ef0b28563aabe8ff546699b6ece",
+    "commit_message": "fixed #36943 -- preserved any exception from urlconf module in autoreloader.\n\nco-authored-by: jacob walls <jacobtylerwal"
+  },
+  {
+    "pr_id": 3367977419,
+    "pr_number": 20864,
+    "merged_at": "2026-03-16T15:53:25Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "d7bf84324fb4b0789302bd0624697ba973dd7140",
+    "commit_message": "fixed #36906 -- handled coalescing json-primitive strings and json values on oracle."
+  },
+  {
+    "pr_id": 3367097779,
+    "pr_number": 20856,
+    "merged_at": "2026-03-24T18:57:02Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "280256499c5b2d636949f3c8cb52159a8e4c26bb",
+    "commit_message": "refs cve-2026-4292 -- isolated new test in adminviewlisteditable.\n\nas originally written, this test interfered with\nadmi"
+  },
+  {
+    "pr_id": 3365174894,
+    "pr_number": 20854,
+    "merged_at": "2026-03-06T21:25:46Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3364543782,
+    "pr_number": 20852,
+    "merged_at": "2026-03-06T21:54:27Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "864850b20f7ef89ed2f6bd8baf1a45acc9245a6c",
+    "commit_message": "fixed #36968 -- improved error message when collectstatic can't find a referenced file."
+  },
+  {
+    "pr_id": 3359134923,
+    "pr_number": 20837,
+    "merged_at": "2026-03-06T21:25:16Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "07c38764db1ba6a39ff0b3b224288e13c304f1c9",
+    "commit_message": "fixed #36679 -- fixed basque date formats to use parenthetical declension suffixes.\n\nbasque (eu) grammar requires condit"
+  },
+  {
+    "pr_id": 3354739833,
+    "pr_number": 20831,
+    "merged_at": "2026-03-13T17:46:49Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "caf90a971f09323775ed0cacf94eadaf39d040e0",
+    "commit_message": "fixed cve-2026-3902 -- ignored headers with underscores in asgirequest.\n\nthanks tarek nakkouch for the report and jake h"
+  },
+  {
+    "pr_id": 3353240405,
+    "pr_number": 20828,
+    "merged_at": "2026-03-04T21:15:49Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "864850b20f7ef89ed2f6bd8baf1a45acc9245a6c",
+    "commit_message": "fixed #36968 -- improved error message when collectstatic can't find a referenced file."
+  },
+  {
+    "pr_id": 3349448239,
+    "pr_number": 20823,
+    "merged_at": "2026-03-03T20:40:38Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "4b6c998301fedec279ec97b6547e67c3e88b7ff0",
+    "commit_message": "fixed #36923 -- added tests for non-hierarchical uri schemes in urlfield.to_python().\n\nfollow up to 951ffb3832cd83ba672c"
+  },
+  {
+    "pr_id": 3340663261,
+    "pr_number": 20807,
+    "merged_at": "2026-03-02T15:32:44Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "3b161e60964aff99eddcd2627a486d81c1836b3a",
+    "commit_message": "fixed #37016 -- avoided propagating invalid arguments from when() to q()."
+  },
+  {
+    "pr_id": 3338247182,
+    "pr_number": 20792,
+    "merged_at": "2026-03-19T16:36:35Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3337089232,
+    "pr_number": 20789,
+    "merged_at": "2026-03-02T19:08:11Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "019e44f67a8dace67b786e2818938c8691132988",
+    "commit_message": "fixed cve-2026-25674 -- prevented potentially incorrect permissions on file system object creation.\n\nthis fix introduces"
+  },
+  {
+    "pr_id": 3336911011,
+    "pr_number": 20788,
+    "merged_at": "2026-02-27T22:06:47Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "3b161e60964aff99eddcd2627a486d81c1836b3a",
+    "commit_message": "fixed #37016 -- avoided propagating invalid arguments from when() to q()."
+  },
+  {
+    "pr_id": 3332840673,
+    "pr_number": 20782,
+    "merged_at": "2026-03-12T23:57:41Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "3b161e60964aff99eddcd2627a486d81c1836b3a",
+    "commit_message": "fixed #37016 -- avoided propagating invalid arguments from when() to q()."
+  },
+  {
+    "pr_id": 3330643138,
+    "pr_number": 20776,
+    "merged_at": "2026-02-26T18:26:55Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "6c95af5c9d294a20d09f080d7c144e3b7362d65f",
+    "commit_message": "fixed #36966 -- fixed valueerror when `query_params` and `follow` are used on test client."
+  },
+  {
+    "pr_id": 3327943388,
+    "pr_number": 20771,
+    "merged_at": "2026-02-26T13:27:33Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3327934359,
+    "pr_number": 20770,
+    "merged_at": "2026-02-25T21:53:22Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "a91e03d7c388ada569a212bafdbdff9c9bff47f2",
+    "commit_message": "refs #36879, #36936 -- fixed typo in rediscachetests.test_client_driver_info."
+  },
+  {
+    "pr_id": 3327563863,
+    "pr_number": 20768,
+    "merged_at": "2026-02-27T22:12:08Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3326091284,
+    "pr_number": 20766,
+    "merged_at": "2026-02-25T16:08:53Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "12bb16da8fbadac34e2de318cc79d7d765f35a96",
+    "commit_message": "fixed #36293 -- avoided buffering streaming responses in gzipmiddleware.\n\nthis avoids latency and/or blocking.\n\nthe exam"
+  },
+  {
+    "pr_id": 3319439990,
+    "pr_number": 20760,
+    "merged_at": "2026-02-24T12:37:25Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3314215828,
+    "pr_number": 20754,
+    "merged_at": "2026-03-17T21:08:18Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "ba4751e0ca558dd8f0d9e6153bec4280289ca2f4",
+    "commit_message": "fixed #36939 -- avoided weakref.finalize in signal.connect().\n\nreplaced weak receiver registration in signal.connect() t"
+  },
+  {
+    "pr_id": 3314186289,
+    "pr_number": 20753,
+    "merged_at": "2026-02-23T18:14:04Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "280256499c5b2d636949f3c8cb52159a8e4c26bb",
+    "commit_message": "refs cve-2026-4292 -- isolated new test in adminviewlisteditable.\n\nas originally written, this test interfered with\nadmi"
+  },
+  {
+    "pr_id": 3312428352,
+    "pr_number": 20749,
+    "merged_at": "2026-03-06T22:32:33Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "caf90a971f09323775ed0cacf94eadaf39d040e0",
+    "commit_message": "fixed cve-2026-3902 -- ignored headers with underscores in asgirequest.\n\nthanks tarek nakkouch for the report and jake h"
+  },
+  {
+    "pr_id": 3310683858,
+    "pr_number": 20747,
+    "merged_at": "2026-02-21T14:18:50Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "07c38764db1ba6a39ff0b3b224288e13c304f1c9",
+    "commit_message": "fixed #36679 -- fixed basque date formats to use parenthetical declension suffixes.\n\nbasque (eu) grammar requires condit"
+  },
+  {
+    "pr_id": 3308632582,
+    "pr_number": 20744,
+    "merged_at": "2026-02-20T18:03:06Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3304844994,
+    "pr_number": 20735,
+    "merged_at": "2026-02-20T20:30:24Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "dadf5df6a05c7b668ce86dca019e7d8d5f461c76",
+    "commit_message": "fixed #37009 -- fixed alignment of \"show/hide counts\" icons in admin changelist."
+  },
+  {
+    "pr_id": 3304698460,
+    "pr_number": 20734,
+    "merged_at": "2026-02-20T14:12:49Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "019e44f67a8dace67b786e2818938c8691132988",
+    "commit_message": "fixed cve-2026-25674 -- prevented potentially incorrect permissions on file system object creation.\n\nthis fix introduces"
+  },
+  {
+    "pr_id": 3304150534,
+    "pr_number": 20733,
+    "merged_at": "2026-02-21T14:52:39Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "6c95af5c9d294a20d09f080d7c144e3b7362d65f",
+    "commit_message": "fixed #36966 -- fixed valueerror when `query_params` and `follow` are used on test client."
+  },
+  {
+    "pr_id": 3301503474,
+    "pr_number": 20728,
+    "merged_at": "2026-02-25T22:02:01Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3300266100,
+    "pr_number": 20727,
+    "merged_at": "2026-02-21T14:37:46Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "f45bfa5e2801545c1c8787f59bee3867c9928871",
+    "commit_message": "fixed #36935 -- added fallback in contenttype.app_labeled_name when model_class() is none.\n\nupdated contenttype.app_labe"
+  },
+  {
+    "pr_id": 3297432810,
+    "pr_number": 20722,
+    "merged_at": "2026-02-25T18:52:24Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "019e44f67a8dace67b786e2818938c8691132988",
+    "commit_message": "fixed cve-2026-25674 -- prevented potentially incorrect permissions on file system object creation.\n\nthis fix introduces"
+  },
+  {
+    "pr_id": 3294216499,
+    "pr_number": 20720,
+    "merged_at": "2026-02-19T16:33:48Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "3157285e27a426530ef571855e0e29c317e210df",
+    "commit_message": "fixed #27150 -- made base file objects truthy by default."
+  },
+  {
+    "pr_id": 3294214522,
+    "pr_number": 20719,
+    "merged_at": "2026-02-28T17:46:45Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "1a8fd5cf75bf855852f6bc2f75c3da9f7b145669",
+    "commit_message": "fixed #36727 -- deprecated field.get_placeholder in favor of get_placeholder_sql.\n\nthe lack of ability of the get_placeh"
+  },
+  {
+    "pr_id": 3291599741,
+    "pr_number": 20718,
+    "merged_at": "2026-03-18T12:23:32Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "4b2b4bf0ac2707dc9c4d51cabfa72168eaea95fe",
+    "commit_message": "fixed #36926 -- made admin use boolean icons for related booleanfields in list_display.\n\nwhen using related field lookup"
+  },
+  {
+    "pr_id": 3288202223,
+    "pr_number": 20714,
+    "merged_at": "2026-02-24T18:44:43Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "7e9885f99cee771b51692fadc5592bdbf19641aa",
+    "commit_message": "fixed cve-2026-33033 -- mitigated potential dos in multipartparser.\n\nwhen a multipart file part used `content-transfer-e"
+  },
+  {
+    "pr_id": 3285410101,
+    "pr_number": 20708,
+    "merged_at": "2026-03-05T13:31:28Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3283951812,
+    "pr_number": 20702,
+    "merged_at": "2026-03-24T21:54:02Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3283447414,
+    "pr_number": 20701,
+    "merged_at": "2026-03-09T20:45:50Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3283261691,
+    "pr_number": 20700,
+    "merged_at": "2026-03-08T11:08:27Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3283207329,
+    "pr_number": 20699,
+    "merged_at": "2026-03-13T20:29:10Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "2e33abe57c37dce6ce5eff9e6cbaf47cdddcf1e3",
+    "commit_message": "fixed #36987 -- observed prepared argument in uuidfield.get_db_prep_value().\n\nthis avoids two isinstance() calls per uui"
+  },
+  {
+    "pr_id": 3282558449,
+    "pr_number": 20696,
+    "merged_at": "2026-02-25T15:22:58Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "169152f8f5ac586e19779faf9943086fe0f416e9",
+    "commit_message": "fixed #36839 -- warned when model renames encounter conflicts from stale contenttypes."
+  },
+  {
+    "pr_id": 3276852319,
+    "pr_number": 20685,
+    "merged_at": "2026-03-16T16:51:59Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "339879620a105129951e9bcd999c74faa709e587",
+    "commit_message": "fixed broken link in email docs."
+  },
+  {
+    "pr_id": 3273720816,
+    "pr_number": 20679,
+    "merged_at": "2026-02-11T23:07:40Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "280256499c5b2d636949f3c8cb52159a8e4c26bb",
+    "commit_message": "refs cve-2026-4292 -- isolated new test in adminviewlisteditable.\n\nas originally written, this test interfered with\nadmi"
+  },
+  {
+    "pr_id": 3273527860,
+    "pr_number": 20677,
+    "merged_at": "2026-02-11T22:13:51Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "280256499c5b2d636949f3c8cb52159a8e4c26bb",
+    "commit_message": "refs cve-2026-4292 -- isolated new test in adminviewlisteditable.\n\nas originally written, this test interfered with\nadmi"
+  },
+  {
+    "pr_id": 3269561223,
+    "pr_number": 20670,
+    "merged_at": "2026-02-12T20:27:12Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3269160277,
+    "pr_number": 20668,
+    "merged_at": "2026-02-11T10:03:16Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "f05fac88c4699c6d04a8f1ac3328cf6c7bd39228",
+    "commit_message": "fixed #36795 -- enforced quoting of all database object names.\n\nthis ensures all database identifiers are quoted indepen"
+  },
+  {
+    "pr_id": 3266428524,
+    "pr_number": 20665,
+    "merged_at": "2026-02-28T14:05:37Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "fcd06f6807f7e2cbf53c9805083d518943c97af8",
+    "commit_message": "refs #36513 -- fixed font-color to also apply to select options in tabularinline."
+  },
+  {
+    "pr_id": 3265248176,
+    "pr_number": 20663,
+    "merged_at": "2026-02-12T20:02:00Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3265215769,
+    "pr_number": 20662,
+    "merged_at": "2026-02-12T20:27:33Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3265177745,
+    "pr_number": 20661,
+    "merged_at": "2026-03-21T14:50:20Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "cec10f992be8eed5ed90506375ae5794cbb7069e",
+    "commit_message": "fixed #20024 -- fixed handling of __in lookups with none in exclude().\n\nthanks simon charette and tim graham for reviews"
+  },
+  {
+    "pr_id": 3265167241,
+    "pr_number": 20660,
+    "merged_at": "2026-02-10T21:04:24Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "280256499c5b2d636949f3c8cb52159a8e4c26bb",
+    "commit_message": "refs cve-2026-4292 -- isolated new test in adminviewlisteditable.\n\nas originally written, this test interfered with\nadmi"
+  },
+  {
+    "pr_id": 3265144749,
+    "pr_number": 20659,
+    "merged_at": "2026-02-10T21:06:49Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "4b2b4bf0ac2707dc9c4d51cabfa72168eaea95fe",
+    "commit_message": "fixed #36926 -- made admin use boolean icons for related booleanfields in list_display.\n\nwhen using related field lookup"
+  },
+  {
+    "pr_id": 3253715664,
+    "pr_number": 20646,
+    "merged_at": "2026-02-10T21:51:55Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "3b161e60964aff99eddcd2627a486d81c1836b3a",
+    "commit_message": "fixed #37016 -- avoided propagating invalid arguments from when() to q()."
+  },
+  {
+    "pr_id": 3240543844,
+    "pr_number": 20636,
+    "merged_at": "2026-02-05T14:18:55Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3238884571,
+    "pr_number": 20632,
+    "merged_at": "2026-02-03T03:22:04Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "253f552c5809fa096116b601bd842ca4f3504860",
+    "commit_message": "fixed #36949 -- improved relatedfieldwidgetwrapper <label>s.\n\nregression in 4187da258fe212d494cb578a0bc2b52c4979ab95."
+  },
+  {
+    "pr_id": 3238648068,
+    "pr_number": 20631,
+    "merged_at": "2026-02-21T14:57:50Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "3157285e27a426530ef571855e0e29c317e210df",
+    "commit_message": "fixed #27150 -- made base file objects truthy by default."
+  },
+  {
+    "pr_id": 3235423629,
+    "pr_number": 20628,
+    "merged_at": "2026-02-10T21:47:45Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "e2abe321a6f1370e05c1a89a742125c9eafcac8c",
+    "commit_message": "fixed #37021 -- added permission.user_perm_str property.\n\nfor use in checking user permissions via has_perm().\n\nco-autho"
+  },
+  {
+    "pr_id": 3230975507,
+    "pr_number": 20623,
+    "merged_at": "2026-01-31T16:48:59Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "4b2b4bf0ac2707dc9c4d51cabfa72168eaea95fe",
+    "commit_message": "fixed #36926 -- made admin use boolean icons for related booleanfields in list_display.\n\nwhen using related field lookup"
+  },
+  {
+    "pr_id": 3229957617,
+    "pr_number": 20619,
+    "merged_at": "2026-01-31T15:55:30Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3229281344,
+    "pr_number": 20618,
+    "merged_at": "2026-01-31T13:59:54Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "ba4751e0ca558dd8f0d9e6153bec4280289ca2f4",
+    "commit_message": "fixed #36939 -- avoided weakref.finalize in signal.connect().\n\nreplaced weak receiver registration in signal.connect() t"
+  },
+  {
+    "pr_id": 3226382583,
+    "pr_number": 20614,
+    "merged_at": "2026-02-03T02:05:44Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "1d4c52c8bf62cc912e5099e86ff229b69ce9d227",
+    "commit_message": "fixed #36893 -- serialized elidable kwarg for runsql and runpython operations."
+  },
+  {
+    "pr_id": 3220733787,
+    "pr_number": 20608,
+    "merged_at": "2026-01-29T12:24:41Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3212711004,
+    "pr_number": 20592,
+    "merged_at": "2026-01-28T01:18:50Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3210080727,
+    "pr_number": 20589,
+    "merged_at": "2026-01-26T15:45:40Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "2e83eb5e78e8036141ae5b810fba4fd9e800f51f",
+    "commit_message": "fixed #36776 -- clarified dev server runs in wsgi mode."
+  },
+  {
+    "pr_id": 3209084131,
+    "pr_number": 20587,
+    "merged_at": "2026-03-19T16:24:17Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "3157285e27a426530ef571855e0e29c317e210df",
+    "commit_message": "fixed #27150 -- made base file objects truthy by default."
+  },
+  {
+    "pr_id": 3208688711,
+    "pr_number": 20586,
+    "merged_at": "2026-01-29T13:11:33Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "d7bf84324fb4b0789302bd0624697ba973dd7140",
+    "commit_message": "fixed #36906 -- handled coalescing json-primitive strings and json values on oracle."
+  },
+  {
+    "pr_id": 3207846526,
+    "pr_number": 20584,
+    "merged_at": "2026-01-26T15:37:12Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3206734193,
+    "pr_number": 20580,
+    "merged_at": "2026-02-03T11:40:29Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "856c915326768962806705ca7733e4abbb8f794f",
+    "commit_message": "fixed #37004 -- used queryset.totally_ordered in basemodelformset.get_queryset() for stable ordering."
+  },
+  {
+    "pr_id": 3204687181,
+    "pr_number": 20576,
+    "merged_at": "2026-02-02T13:15:13Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "253f552c5809fa096116b601bd842ca4f3504860",
+    "commit_message": "fixed #36949 -- improved relatedfieldwidgetwrapper <label>s.\n\nregression in 4187da258fe212d494cb578a0bc2b52c4979ab95."
+  },
+  {
+    "pr_id": 3204118860,
+    "pr_number": 20575,
+    "merged_at": "2026-01-23T18:16:30Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "eb22e1d6d643360e952609ef562c139a100ea4eb",
+    "commit_message": "fixed cve-2025-14550 -- optimized repeated header parsing in asgi requests.\n\nthanks jiyong yang for the report, and nata"
+  },
+  {
+    "pr_id": 3203727487,
+    "pr_number": 20574,
+    "merged_at": "2026-01-28T21:13:05Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3191753003,
+    "pr_number": 20564,
+    "merged_at": "2026-01-20T16:54:07Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3185380545,
+    "pr_number": 20553,
+    "merged_at": "2026-01-18T20:26:56Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3179505663,
+    "pr_number": 20543,
+    "merged_at": "2026-01-19T19:08:34Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3178906465,
+    "pr_number": 20542,
+    "merged_at": "2026-02-10T21:45:44Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3175623518,
+    "pr_number": 20539,
+    "merged_at": "2026-02-27T12:45:21Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3175497204,
+    "pr_number": 20538,
+    "merged_at": "2026-01-30T16:45:39Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3169725887,
+    "pr_number": 20532,
+    "merged_at": "2026-04-08T21:30:06Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3166930358,
+    "pr_number": 20528,
+    "merged_at": "2026-01-26T15:25:47Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3165958459,
+    "pr_number": 20527,
+    "merged_at": "2026-03-16T20:44:40Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3164080475,
+    "pr_number": 20526,
+    "merged_at": "2026-01-12T19:05:04Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3162504942,
+    "pr_number": 20524,
+    "merged_at": "2026-01-16T14:17:57Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3160976585,
+    "pr_number": 20519,
+    "merged_at": "2026-01-14T13:25:37Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3160901950,
+    "pr_number": 20518,
+    "merged_at": "2026-02-13T21:58:37Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3157612339,
+    "pr_number": 20515,
+    "merged_at": "2026-01-16T17:38:21Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3155258371,
+    "pr_number": 20510,
+    "merged_at": "2026-01-08T16:33:53Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3152445578,
+    "pr_number": 20505,
+    "merged_at": "2026-01-25T10:51:03Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3150941155,
+    "pr_number": 20502,
+    "merged_at": "2026-03-17T14:28:26Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3147289227,
+    "pr_number": 20498,
+    "merged_at": "2026-02-10T22:59:02Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3147249604,
+    "pr_number": 20497,
+    "merged_at": "2026-01-05T20:45:27Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3145858182,
+    "pr_number": 20496,
+    "merged_at": "2026-01-07T15:23:26Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3145229880,
+    "pr_number": 20495,
+    "merged_at": "2026-01-13T18:18:14Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3144351725,
+    "pr_number": 20493,
+    "merged_at": "2026-01-09T19:03:28Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3143146682,
+    "pr_number": 20486,
+    "merged_at": "2026-01-03T18:42:02Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3139277155,
+    "pr_number": 20480,
+    "merged_at": "2025-12-31T15:41:55Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3137777946,
+    "pr_number": 20478,
+    "merged_at": "2025-12-30T21:21:58Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3132215042,
+    "pr_number": 20471,
+    "merged_at": "2025-12-31T15:14:00Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3130233830,
+    "pr_number": 20466,
+    "merged_at": "2026-01-20T15:40:53Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3129771299,
+    "pr_number": 20462,
+    "merged_at": "2026-01-10T07:45:14Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3129695900,
+    "pr_number": 20461,
+    "merged_at": "2026-01-16T14:15:53Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3129451025,
+    "pr_number": 20460,
+    "merged_at": "2026-01-14T18:31:16Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3129113712,
+    "pr_number": 20459,
+    "merged_at": "2025-12-26T12:24:58Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3128943233,
+    "pr_number": 20458,
+    "merged_at": "2026-02-06T20:45:45Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3127704279,
+    "pr_number": 20456,
+    "merged_at": "2026-04-07T18:06:12Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3127438441,
+    "pr_number": 20455,
+    "merged_at": "2026-02-09T22:46:33Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3127283720,
+    "pr_number": 20454,
+    "merged_at": "2025-12-28T13:07:11Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3127101471,
+    "pr_number": 20453,
+    "merged_at": "2025-12-24T07:25:14Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3124430405,
+    "pr_number": 20447,
+    "merged_at": "2025-12-23T01:38:55Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3123986854,
+    "pr_number": 20445,
+    "merged_at": "2025-12-28T18:21:49Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3123395521,
+    "pr_number": 20443,
+    "merged_at": "2025-12-23T01:33:13Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3121124083,
+    "pr_number": 20441,
+    "merged_at": "2025-12-26T15:29:06Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3120753768,
+    "pr_number": 20438,
+    "merged_at": "2025-12-22T11:05:25Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3120663764,
+    "pr_number": 20437,
+    "merged_at": "2025-12-22T19:25:45Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3120458727,
+    "pr_number": 20436,
+    "merged_at": "2026-03-11T17:53:27Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3115647846,
+    "pr_number": 20427,
+    "merged_at": "2025-12-24T17:46:41Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3115276005,
+    "pr_number": 20426,
+    "merged_at": "2025-12-19T20:10:12Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3113865305,
+    "pr_number": 20423,
+    "merged_at": "2025-12-19T14:48:15Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3113308593,
+    "pr_number": 20422,
+    "merged_at": "2025-12-22T19:02:21Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3113290618,
+    "pr_number": 20421,
+    "merged_at": "2025-12-22T14:41:42Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3112257401,
+    "pr_number": 20420,
+    "merged_at": "2025-12-22T19:21:01Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3110278562,
+    "pr_number": 20418,
+    "merged_at": "2025-12-23T02:04:01Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3107226838,
+    "pr_number": 20416,
+    "merged_at": "2026-01-12T13:46:22Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3104106262,
+    "pr_number": 20411,
+    "merged_at": "2025-12-16T22:45:35Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3103305039,
+    "pr_number": 20409,
+    "merged_at": "2026-01-12T21:38:32Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3098935426,
+    "pr_number": 20401,
+    "merged_at": "2026-03-09T12:41:01Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3098030631,
+    "pr_number": 20395,
+    "merged_at": "2025-12-19T19:01:37Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3093620868,
+    "pr_number": 20392,
+    "merged_at": "2025-12-11T17:10:52Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3093106126,
+    "pr_number": 20390,
+    "merged_at": "2025-12-11T16:28:49Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3082362719,
+    "pr_number": 20380,
+    "merged_at": "2025-12-18T22:53:24Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3081960923,
+    "pr_number": 20379,
+    "merged_at": "2025-12-15T21:58:41Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3077513998,
+    "pr_number": 20377,
+    "merged_at": "2025-12-11T17:38:04Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3075697900,
+    "pr_number": 20374,
+    "merged_at": "2025-12-15T20:23:51Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3070337202,
+    "pr_number": 20370,
+    "merged_at": "2025-12-09T21:45:13Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3069355061,
+    "pr_number": 20369,
+    "merged_at": "2025-12-04T16:37:22Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3064278465,
+    "pr_number": 20362,
+    "merged_at": "2025-12-13T15:38:04Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3064273114,
+    "pr_number": 20361,
+    "merged_at": "2025-12-02T18:08:42Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3062896989,
+    "pr_number": 20357,
+    "merged_at": "2025-12-02T10:49:20Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3059389302,
+    "pr_number": 20350,
+    "merged_at": "2025-12-01T19:33:20Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3056772256,
+    "pr_number": 20346,
+    "merged_at": "2026-01-28T22:04:39Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3055975654,
+    "pr_number": 20341,
+    "merged_at": "2025-12-01T13:38:27Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3055972413,
+    "pr_number": 20340,
+    "merged_at": "2025-12-02T01:48:54Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3054848732,
+    "pr_number": 20338,
+    "merged_at": "2026-02-09T13:44:08Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3048700898,
+    "pr_number": 20331,
+    "merged_at": "2025-11-26T20:17:46Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3048200923,
+    "pr_number": 20330,
+    "merged_at": "2025-11-26T23:05:32Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3047936508,
+    "pr_number": 20329,
+    "merged_at": "2025-12-03T21:04:22Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3047390707,
+    "pr_number": 20328,
+    "merged_at": "2025-11-26T12:47:26Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3046676011,
+    "pr_number": 20327,
+    "merged_at": "2026-04-14T11:32:08Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3044663134,
+    "pr_number": 20321,
+    "merged_at": "2026-01-06T20:15:56Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3042025647,
+    "pr_number": 20318,
+    "merged_at": "2025-11-25T08:03:17Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3041573113,
+    "pr_number": 20317,
+    "merged_at": "2025-11-25T10:21:13Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3041062949,
+    "pr_number": 20316,
+    "merged_at": "2025-11-24T19:39:27Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3040431930,
+    "pr_number": 20312,
+    "merged_at": "2025-12-27T09:42:25Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3039170461,
+    "pr_number": 20309,
+    "merged_at": "2026-01-20T15:42:29Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3038992397,
+    "pr_number": 20308,
+    "merged_at": "2026-02-26T12:46:35Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3037701073,
+    "pr_number": 20303,
+    "merged_at": "2025-11-24T11:14:38Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3036703231,
+    "pr_number": 20300,
+    "merged_at": "2026-03-13T00:01:02Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3036372643,
+    "pr_number": 20295,
+    "merged_at": "2025-12-17T15:19:05Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3034167067,
+    "pr_number": 20290,
+    "merged_at": "2025-11-21T17:11:38Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3033911848,
+    "pr_number": 20289,
+    "merged_at": "2025-11-21T16:55:28Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3033729585,
+    "pr_number": 20288,
+    "merged_at": "2025-12-29T14:48:11Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3032756299,
+    "pr_number": 20287,
+    "merged_at": "2025-12-17T17:15:18Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3032251496,
+    "pr_number": 20286,
+    "merged_at": "2025-11-24T11:03:36Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3031820224,
+    "pr_number": 20285,
+    "merged_at": "2025-11-26T16:39:02Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3031699829,
+    "pr_number": 20283,
+    "merged_at": "2025-11-20T22:22:47Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3031692105,
+    "pr_number": 20282,
+    "merged_at": "2025-12-12T16:50:37Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3031057997,
+    "pr_number": 20281,
+    "merged_at": "2025-12-15T20:24:57Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3030659599,
+    "pr_number": 20279,
+    "merged_at": "2025-11-21T18:36:25Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3022659731,
+    "pr_number": 20267,
+    "merged_at": "2025-11-19T07:22:44Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3021716057,
+    "pr_number": 20266,
+    "merged_at": "2025-11-24T21:35:18Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3017674018,
+    "pr_number": 20184,
+    "merged_at": "2026-01-12T18:34:15Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3016961833,
+    "pr_number": 20183,
+    "merged_at": "2025-11-20T14:35:59Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3015513522,
+    "pr_number": 20182,
+    "merged_at": "2025-12-03T14:18:10Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3013863517,
+    "pr_number": 20101,
+    "merged_at": "2025-12-12T16:17:08Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3012944437,
+    "pr_number": 20098,
+    "merged_at": "2025-11-18T22:15:31Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3008771100,
+    "pr_number": 20094,
+    "merged_at": "2025-11-18T13:10:26Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3006164675,
+    "pr_number": 20090,
+    "merged_at": "2025-11-13T10:35:03Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3004086315,
+    "pr_number": 20087,
+    "merged_at": "2025-11-13T09:03:51Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3003726035,
+    "pr_number": 20086,
+    "merged_at": "2025-12-05T15:06:48Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 3000571011,
+    "pr_number": 20082,
+    "merged_at": "2025-11-11T23:28:08Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2998329884,
+    "pr_number": 20080,
+    "merged_at": "2025-11-13T16:22:44Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2997741335,
+    "pr_number": 20077,
+    "merged_at": "2025-11-14T14:26:05Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2995130432,
+    "pr_number": 20076,
+    "merged_at": "2025-11-12T22:42:24Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2994921276,
+    "pr_number": 20075,
+    "merged_at": "2025-11-11T21:31:16Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2994877182,
+    "pr_number": 20074,
+    "merged_at": "2025-12-05T14:35:15Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2992413074,
+    "pr_number": 20071,
+    "merged_at": "2025-11-12T22:14:52Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2991516908,
+    "pr_number": 20070,
+    "merged_at": "2025-11-21T10:20:12Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2987946478,
+    "pr_number": 20067,
+    "merged_at": "2025-12-17T17:37:18Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2987203099,
+    "pr_number": 20065,
+    "merged_at": "2025-11-10T19:45:48Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2984404748,
+    "pr_number": 20063,
+    "merged_at": "2025-11-14T12:36:15Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2981717667,
+    "pr_number": 20061,
+    "merged_at": "2025-11-05T21:56:15Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2981405335,
+    "pr_number": 20060,
+    "merged_at": "2025-11-05T22:05:54Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2977824608,
+    "pr_number": 20059,
+    "merged_at": "2025-11-10T19:13:49Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2976100246,
+    "pr_number": 20055,
+    "merged_at": "2025-11-17T12:43:48Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2975568486,
+    "pr_number": 20053,
+    "merged_at": "2025-11-04T16:59:21Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2973996143,
+    "pr_number": 20048,
+    "merged_at": "2025-11-04T01:45:49Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2973852350,
+    "pr_number": 20047,
+    "merged_at": "2025-11-03T20:27:55Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2973586287,
+    "pr_number": 20045,
+    "merged_at": "2025-11-07T19:06:43Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2973576803,
+    "pr_number": 20044,
+    "merged_at": "2025-11-03T18:40:03Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2973524345,
+    "pr_number": 20043,
+    "merged_at": "2025-11-04T13:15:23Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2972204495,
+    "pr_number": 20041,
+    "merged_at": "2025-11-06T16:58:01Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2966861007,
+    "pr_number": 20029,
+    "merged_at": "2026-02-27T17:49:27Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2965825935,
+    "pr_number": 20028,
+    "merged_at": "2026-03-06T12:02:21Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2965819238,
+    "pr_number": 20027,
+    "merged_at": "2026-04-02T15:24:26Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2962289305,
+    "pr_number": 20024,
+    "merged_at": "2025-10-31T12:44:37Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2961938210,
+    "pr_number": 20023,
+    "merged_at": "2025-10-30T11:38:18Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2961813317,
+    "pr_number": 20021,
+    "merged_at": "2025-11-20T20:40:07Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2955542893,
+    "pr_number": 20014,
+    "merged_at": "2025-10-28T15:40:01Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2954609328,
+    "pr_number": 20012,
+    "merged_at": "2025-10-28T14:55:49Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2952611671,
+    "pr_number": 20009,
+    "merged_at": "2025-12-10T22:45:51Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2951752643,
+    "pr_number": 20005,
+    "merged_at": "2025-10-29T11:38:20Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2948756907,
+    "pr_number": 20003,
+    "merged_at": "2025-10-27T14:05:23Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2945381037,
+    "pr_number": 19999,
+    "merged_at": "2026-03-08T09:44:56Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2944597974,
+    "pr_number": 19998,
+    "merged_at": "2025-10-24T14:33:40Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2941772256,
+    "pr_number": 19997,
+    "merged_at": "2025-10-25T16:21:27Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2938514494,
+    "pr_number": 19993,
+    "merged_at": "2025-12-10T01:07:20Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2937806258,
+    "pr_number": 19991,
+    "merged_at": "2025-10-28T12:02:10Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2936880520,
+    "pr_number": 19989,
+    "merged_at": "2025-10-31T13:33:27Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2936061234,
+    "pr_number": 19986,
+    "merged_at": "2025-10-24T19:51:39Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2934990029,
+    "pr_number": 19983,
+    "merged_at": "2025-10-29T12:11:32Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2934552286,
+    "pr_number": 19982,
+    "merged_at": "2025-10-22T02:10:31Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2934187920,
+    "pr_number": 19980,
+    "merged_at": "2025-10-22T02:54:21Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2933057993,
+    "pr_number": 19978,
+    "merged_at": "2025-10-22T08:04:38Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2929599514,
+    "pr_number": 19976,
+    "merged_at": "2025-10-20T14:03:39Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2926798063,
+    "pr_number": 19974,
+    "merged_at": "2025-10-20T17:52:03Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2924209156,
+    "pr_number": 19972,
+    "merged_at": "2025-10-18T19:04:11Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2919121347,
+    "pr_number": 19966,
+    "merged_at": "2025-10-16T03:44:15Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2918709790,
+    "pr_number": 19964,
+    "merged_at": "2025-10-17T17:25:03Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2912786435,
+    "pr_number": 19957,
+    "merged_at": "2025-10-15T13:03:07Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2911551981,
+    "pr_number": 19955,
+    "merged_at": "2025-10-14T19:48:29Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2911345450,
+    "pr_number": 19954,
+    "merged_at": "2025-10-13T20:12:44Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2909422012,
+    "pr_number": 19949,
+    "merged_at": "2025-10-14T12:38:41Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2908017307,
+    "pr_number": 19945,
+    "merged_at": "2025-10-13T13:42:23Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2905640161,
+    "pr_number": 19943,
+    "merged_at": "2025-10-21T14:45:13Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2901850188,
+    "pr_number": 19938,
+    "merged_at": "2025-10-15T21:25:08Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2901130765,
+    "pr_number": 19937,
+    "merged_at": "2025-10-12T20:09:46Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2899752482,
+    "pr_number": 19933,
+    "merged_at": "2025-10-23T14:11:52Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2898078991,
+    "pr_number": 19932,
+    "merged_at": "2025-10-11T17:02:52Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2893360054,
+    "pr_number": 19925,
+    "merged_at": "2025-10-18T13:03:50Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2893310593,
+    "pr_number": 19923,
+    "merged_at": "2026-01-30T19:07:16Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2886947741,
+    "pr_number": 19919,
+    "merged_at": "2025-12-03T20:04:52Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2884779730,
+    "pr_number": 19917,
+    "merged_at": "2025-10-03T19:16:37Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2884638537,
+    "pr_number": 19916,
+    "merged_at": "2025-10-03T21:12:58Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2880774582,
+    "pr_number": 19914,
+    "merged_at": "2025-10-02T11:20:01Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2872180978,
+    "pr_number": 19912,
+    "merged_at": "2025-11-13T11:37:00Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2867911883,
+    "pr_number": 19910,
+    "merged_at": "2025-09-29T21:09:53Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2867582225,
+    "pr_number": 19909,
+    "merged_at": "2025-09-29T21:01:13Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2866719607,
+    "pr_number": 19907,
+    "merged_at": "2025-09-29T09:58:08Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2855151834,
+    "pr_number": 19899,
+    "merged_at": "2025-09-30T06:45:39Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2845568851,
+    "pr_number": 19886,
+    "merged_at": "2025-09-23T16:36:49Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2844073467,
+    "pr_number": 19884,
+    "merged_at": "2025-10-13T17:53:39Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2841526746,
+    "pr_number": 19882,
+    "merged_at": "2025-09-19T18:38:07Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2841021026,
+    "pr_number": 19880,
+    "merged_at": "2025-09-26T12:06:39Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2840512404,
+    "pr_number": 19879,
+    "merged_at": "2025-09-19T07:49:03Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2836637247,
+    "pr_number": 19876,
+    "merged_at": "2025-09-17T16:28:58Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2835981804,
+    "pr_number": 19874,
+    "merged_at": "2025-09-30T06:46:28Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "70e93bc17bc00c4d1ade9ba600ffe180a6973d66",
+    "commit_message": "fixed #36756 -- dropped support for gdal 3.1 and 3.2."
+  },
+  {
+    "pr_id": 2835296162,
+    "pr_number": 19873,
+    "merged_at": "2025-09-22T07:00:24Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "adc25a9a6696f7e2ab6181aabce3a23e027d6703",
+    "commit_message": "fixed #35381 -- added jsonnull() expression.\n\nthanks jacob walls for the review."
+  },
+  {
+    "pr_id": 2834506712,
+    "pr_number": 19871,
+    "merged_at": "2025-09-17T11:50:08Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "74564946c3b42a2ef7d087047e49873847a7e1d9",
+    "commit_message": "fixed #36704 -- fixed system check error for proxy model with a composite pk.\n\nproxy models subclassing a model with a c"
+  },
+  {
+    "pr_id": 2834370154,
+    "pr_number": 19870,
+    "merged_at": "2025-12-16T20:06:10Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "cc8ee496a5293ecf7155d61c6052905c92db3ca0",
+    "commit_message": "refs #36305 -- fixed indentation in checks and middleware documentation."
+  },
+  {
+    "pr_id": 2833612417,
+    "pr_number": 19869,
+    "merged_at": "2025-09-16T16:54:10Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "74564946c3b42a2ef7d087047e49873847a7e1d9",
+    "commit_message": "fixed #36704 -- fixed system check error for proxy model with a composite pk.\n\nproxy models subclassing a model with a c"
+  },
+  {
+    "pr_id": 2829673754,
+    "pr_number": 19867,
+    "merged_at": "2025-09-16T01:14:50Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "1c7db70e79dce82f50d5958da64ab8e2807a31df",
+    "commit_message": "fixed #36705 -- avoided string concatenation in utils.\n\nrepeated string concatenation performs poorly on pypy.\nthanks se"
+  },
+  {
+    "pr_id": 2826947650,
+    "pr_number": 19862,
+    "merged_at": "2025-09-15T20:07:53Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2826722142,
+    "pr_number": 19860,
+    "merged_at": "2025-09-19T19:54:19Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2825784719,
+    "pr_number": 19859,
+    "merged_at": "2025-09-14T19:12:40Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2825536933,
+    "pr_number": 19858,
+    "merged_at": "2025-09-23T07:14:08Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "5b51e6f759f2ba993219347435149173c756c478",
+    "commit_message": "fixed #36611, refs #36580 -- added system check for multicolumn foreignobject in meta.indexes/constraints/unique_togethe"
+  },
+  {
+    "pr_id": 2823841701,
+    "pr_number": 19853,
+    "merged_at": "2025-09-26T14:55:30Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "1aa69a7491ce7f7f1f164a26a3dfaaa1aeeab217",
+    "commit_message": "fixed #36678 -- limited retries in paralleltestrunner.\n\nthanks natalia bidart for the review."
+  },
+  {
+    "pr_id": 2820508625,
+    "pr_number": 19847,
+    "merged_at": "2025-09-15T20:45:13Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "5401b125abca53200eacb62c8a10e602359b76d4",
+    "commit_message": "fixed #36717 -- redirect authenticated users on admin login view to next url.\n\nco-authored-by: natalia <124304+nessita@u"
+  },
+  {
+    "pr_id": 2820411138,
+    "pr_number": 19845,
+    "merged_at": "2025-09-22T12:35:53Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "43933a1dca07047e95ec990d9289d0212668009e",
+    "commit_message": "reverted \"fixed #26434 -- removed faulty clearing of ordering field when missing from explicit grouping.\"\n\nthis reverts "
+  },
+  {
+    "pr_id": 2820220847,
+    "pr_number": 19844,
+    "merged_at": "2025-09-17T00:58:40Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "6d4d99b3cef4a6d931de02f89a493fb345dc438e",
+    "commit_message": "fixed #36702 -- made bulk_create() return pk values set by an expression."
+  },
+  {
+    "pr_id": 2818769664,
+    "pr_number": 19842,
+    "merged_at": "2025-09-25T12:51:43Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "789b07544798a9c83d0b74dce7c33fcd8d929a7d",
+    "commit_message": "fixed #35774 -- dropped support for geos 3.8.\n\ngeos 3.8 (released oct-2019) will be more than 5 years old when\ndjango 6."
+  },
+  {
+    "pr_id": 2816928559,
+    "pr_number": 19841,
+    "merged_at": "2025-09-11T09:09:53Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "41bc48ac1ed1d515977ebe965993b1ef83eafd02",
+    "commit_message": "fixed #36603 -- optimized check order in loginrequiredmiddleware."
+  },
+  {
+    "pr_id": 2816006522,
+    "pr_number": 19840,
+    "merged_at": "2025-12-19T18:02:22Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "72ae25a9c2bb1a9e369e52e696a8b7d1a8df245e",
+    "commit_message": "fixed #36879 -- identified django client in redis client metadata."
+  },
+  {
+    "pr_id": 2813922051,
+    "pr_number": 19837,
+    "merged_at": "2025-09-17T07:56:01Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "924a0c092e65fa2d0953fd1855d2dc8786d94de2",
+    "commit_message": "fixed cve-2025-59682 -- fixed potential partial directory-traversal via archive.extract().\n\nthanks stackered for the rep"
+  },
+  {
+    "pr_id": 2808679680,
+    "pr_number": 19834,
+    "merged_at": "2025-09-17T18:17:05Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "2b0f24e6223bf7e294fba63741f58eb7b0bf49ff",
+    "commit_message": "fixed typo in docs/ref/databases.txt."
+  },
+  {
+    "pr_id": 2808215956,
+    "pr_number": 19833,
+    "merged_at": "2025-09-22T06:54:08Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "0f75f8f1ff2078cde3c1701851c754b91c6baf44",
+    "commit_message": "optimized view.dispatch() a bit."
+  },
+  {
+    "pr_id": 2802734741,
+    "pr_number": 19823,
+    "merged_at": "2025-09-12T08:35:01Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "7528979153355faa49c3e49ba3ea233f998a7583",
+    "commit_message": "added cleanup of cache clearing to djangofileprefixestests.setup()."
+  },
+  {
+    "pr_id": 2799172378,
+    "pr_number": 19816,
+    "merged_at": "2025-09-04T16:14:10Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "7b26b64a63b5fc15134426a6ee0534dca2a1a855",
+    "commit_message": "refs #35667 -- cached django file prefixes for warnings."
+  },
+  {
+    "pr_id": 2790589731,
+    "pr_number": 19805,
+    "merged_at": "2025-09-03T21:39:00Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "0ea01101c3a35568bc43e9707ac058b9874bd425",
+    "commit_message": "fixed #36681 -- removed english pluralization bias from example in docs/topics/i18n/translation.txt."
+  },
+  {
+    "pr_id": 2787583837,
+    "pr_number": 19802,
+    "merged_at": "2025-09-25T09:38:28Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "68aae8878ff90dd787db55ecc44ee712525ccdc6",
+    "commit_message": "fixed #36434 -- preserved unbuffered stdio (-u) in autoreloader child.\n\nsigned-off-by: sajh <wogur981208@gmail.com>"
+  },
+  {
+    "pr_id": 2786828234,
+    "pr_number": 19800,
+    "merged_at": "2025-09-23T14:40:58Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "0c487aa3a7b2417481bf48c1e5355c855873e210",
+    "commit_message": "fixed #21961 -- added support for database-level delete options for foreignkey.\n\nthanks simon charette for pair programm"
+  },
+  {
+    "pr_id": 2786795238,
+    "pr_number": 19799,
+    "merged_at": "2025-09-19T17:15:41Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "43933a1dca07047e95ec990d9289d0212668009e",
+    "commit_message": "reverted \"fixed #26434 -- removed faulty clearing of ordering field when missing from explicit grouping.\"\n\nthis reverts "
+  },
+  {
+    "pr_id": 2786719264,
+    "pr_number": 19798,
+    "merged_at": "2025-09-16T14:25:16Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "74564946c3b42a2ef7d087047e49873847a7e1d9",
+    "commit_message": "fixed #36704 -- fixed system check error for proxy model with a composite pk.\n\nproxy models subclassing a model with a c"
+  },
+  {
+    "pr_id": 2785585611,
+    "pr_number": 19795,
+    "merged_at": "2025-08-29T21:35:51Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2784960677,
+    "pr_number": 19794,
+    "merged_at": "2025-10-29T19:00:52Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "6ee8e9d56c17eb0014e73189950a9e8de2a8ec0e",
+    "commit_message": "fixed #36508 -- interpreted __iexact=none on keytransforms as __exact=none.\n\nthanks jacob walls for the report."
+  },
+  {
+    "pr_id": 2784954180,
+    "pr_number": 19793,
+    "merged_at": "2025-12-22T19:20:07Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "4139cb8d35cfcb2beba6a8c629c20016ae84cf18",
+    "commit_message": "fixed #36929 -- dropped support for geos 3.9.\n\nthanks david smith for report and tim graham for review."
+  },
+  {
+    "pr_id": 2778531088,
+    "pr_number": 19786,
+    "merged_at": "2025-08-27T22:23:43Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "8b241f84e25f679c459393dab2947c8354eb01a9",
+    "commit_message": "fixed #36614 -- deprecated queryset.values_list(flat=true) without a field.\n\nthanks to jacob walls and simon charette fo"
+  },
+  {
+    "pr_id": 2777816466,
+    "pr_number": 19784,
+    "merged_at": "2025-08-27T16:16:28Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "d8426f64a75356832655c457be3c9761102d9cf1",
+    "commit_message": "fixed #36577 -- removed obsolete try-except for gis layermapping imports."
+  },
+  {
+    "pr_id": 2775801361,
+    "pr_number": 19781,
+    "merged_at": "2025-08-28T06:54:56Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "a9fe98d5bd4212d069afe8316101984aadecfbb2",
+    "commit_message": "fixed #35533 -- prevented urlize creating broken links given a markdown link input.\n\nsigned-off-by: sajh <wogur981208@gm"
+  },
+  {
+    "pr_id": 2775065326,
+    "pr_number": 19779,
+    "merged_at": "2025-08-29T17:45:08Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "43933a1dca07047e95ec990d9289d0212668009e",
+    "commit_message": "reverted \"fixed #26434 -- removed faulty clearing of ordering field when missing from explicit grouping.\"\n\nthis reverts "
+  },
+  {
+    "pr_id": 2774838422,
+    "pr_number": 19778,
+    "merged_at": "2025-08-27T08:50:50Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "5b51e6f759f2ba993219347435149173c756c478",
+    "commit_message": "fixed #36611, refs #36580 -- added system check for multicolumn foreignobject in meta.indexes/constraints/unique_togethe"
+  },
+  {
+    "pr_id": 2772631265,
+    "pr_number": 19775,
+    "merged_at": "2025-08-26T21:26:02Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "550822bceea227b07445d1852c4376b663c09ea4",
+    "commit_message": "fixed #36532 -- added content security policy view decorators to override or disable policies.\n\nco-authored-by: natalia "
+  },
+  {
+    "pr_id": 2771901734,
+    "pr_number": 19772,
+    "merged_at": "2025-08-28T06:52:43Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "d506e4a52847ed4fb80754175d76b6b83ff90929",
+    "commit_message": "fixed #36671 -- dropped support for sqlite < 3.37."
+  },
+  {
+    "pr_id": 2769985902,
+    "pr_number": 19771,
+    "merged_at": "2025-08-29T19:33:44Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "43933a1dca07047e95ec990d9289d0212668009e",
+    "commit_message": "reverted \"fixed #26434 -- removed faulty clearing of ordering field when missing from explicit grouping.\"\n\nthis reverts "
+  },
+  {
+    "pr_id": 2768943153,
+    "pr_number": 19766,
+    "merged_at": "2025-08-23T17:55:54Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "0c487aa3a7b2417481bf48c1e5355c855873e210",
+    "commit_message": "fixed #21961 -- added support for database-level delete options for foreignkey.\n\nthanks simon charette for pair programm"
+  },
+  {
+    "pr_id": 2762891279,
+    "pr_number": 19761,
+    "merged_at": "2025-08-21T15:25:57Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "d6a8e5f5e1129d78e6ad40c66c6282ab55be8b61",
+    "commit_message": "fixed failing bulk_create test raising integrityerror when run in reverse.\n\nwhen running the `bulk_create` tests with po"
+  },
+  {
+    "pr_id": 2762792182,
+    "pr_number": 19759,
+    "merged_at": "2025-08-21T15:04:28Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "bc03f1064e10fa247a46d4e8a98ba9b26aa4790d",
+    "commit_message": "fixed #34041 -- added aria-current attribute to admin breadcrumbs.\n\nco-authored by: farita1699 <uwanjerry25@gmail.com>"
+  },
+  {
+    "pr_id": 2760152799,
+    "pr_number": 19757,
+    "merged_at": "2025-08-28T17:25:36Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2758515350,
+    "pr_number": 19756,
+    "merged_at": "2025-08-20T08:29:07Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "d0e4dd5cdd743a5c43c4ccc2c8fa29d3982eaa71",
+    "commit_message": "fixed #36572 -- revert \"fixed #36546 -- deprecated django.utils.crypto.constant_time_compare() in favor of hmac.compare_"
+  },
+  {
+    "pr_id": 2757383224,
+    "pr_number": 19753,
+    "merged_at": "2025-09-05T14:43:11Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "05ba1a9228128614fb3c475f1c4bdf0160f44dba",
+    "commit_message": "fixed #36661 -- added introspection of database-level delete options."
+  },
+  {
+    "pr_id": 2757373050,
+    "pr_number": 19752,
+    "merged_at": "2025-08-22T14:14:09Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "8b241f84e25f679c459393dab2947c8354eb01a9",
+    "commit_message": "fixed #36614 -- deprecated queryset.values_list(flat=true) without a field.\n\nthanks to jacob walls and simon charette fo"
+  },
+  {
+    "pr_id": 2755928035,
+    "pr_number": 19750,
+    "merged_at": "2025-09-03T14:59:58Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "7b26b64a63b5fc15134426a6ee0534dca2a1a855",
+    "commit_message": "refs #35667 -- cached django file prefixes for warnings."
+  },
+  {
+    "pr_id": 2755771160,
+    "pr_number": 19749,
+    "merged_at": "2025-08-20T07:14:50Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "d0e4dd5cdd743a5c43c4ccc2c8fa29d3982eaa71",
+    "commit_message": "fixed #36572 -- revert \"fixed #36546 -- deprecated django.utils.crypto.constant_time_compare() in favor of hmac.compare_"
+  },
+  {
+    "pr_id": 2755477735,
+    "pr_number": 19748,
+    "merged_at": "2025-08-21T14:48:36Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "ed7c1a56400d64f109f30df3ce697984cdad7c75",
+    "commit_message": "fixed #36560 -- prevented updatecachemiddleware from caching responses with cache-control 'no-cache' or 'no-store'."
+  },
+  {
+    "pr_id": 2753746623,
+    "pr_number": 19745,
+    "merged_at": "2025-08-25T12:45:16Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "5b51e6f759f2ba993219347435149173c756c478",
+    "commit_message": "fixed #36611, refs #36580 -- added system check for multicolumn foreignobject in meta.indexes/constraints/unique_togethe"
+  },
+  {
+    "pr_id": 2753558830,
+    "pr_number": 19744,
+    "merged_at": "2025-08-25T08:05:45Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "3ba24c18e70dd242ae237fd955fb8be30f99bc4d",
+    "commit_message": "fixed #36251 -- avoided mutating form meta.fields in baseinlineformset.\n\nsigned-off-by: sajh <wogur981208@gmail.com>"
+  },
+  {
+    "pr_id": 2750003990,
+    "pr_number": 19733,
+    "merged_at": "2025-08-26T11:45:28Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "2b62951fecf0024ce9ce0ce9f5be512c10747c0d",
+    "commit_message": "fixed #36659 -- fixed flatpage content selector in admin forms.css.\n\nregression in bb145e2c47d71b7f68280c00ced727442d2ef"
+  },
+  {
+    "pr_id": 2748818299,
+    "pr_number": 19732,
+    "merged_at": "2025-08-21T16:28:30Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "3ba24c18e70dd242ae237fd955fb8be30f99bc4d",
+    "commit_message": "fixed #36251 -- avoided mutating form meta.fields in baseinlineformset.\n\nsigned-off-by: sajh <wogur981208@gmail.com>"
+  },
+  {
+    "pr_id": 2742935698,
+    "pr_number": 19729,
+    "merged_at": "2025-08-13T20:49:51Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "0e0b4214c350da9b627a67987b13ec334e1de033",
+    "commit_message": "fixed #36589 -- made asserttemplateused/notused track full path for partialtemplate.\n\npreviously, asserttemplateused onl"
+  },
+  {
+    "pr_id": 2742927363,
+    "pr_number": 19728,
+    "merged_at": "2025-08-13T20:49:04Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "0e0b4214c350da9b627a67987b13ec334e1de033",
+    "commit_message": "fixed #36589 -- made asserttemplateused/notused track full path for partialtemplate.\n\npreviously, asserttemplateused onl"
+  },
+  {
+    "pr_id": 2742863547,
+    "pr_number": 19727,
+    "merged_at": "2025-08-13T20:48:37Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "0e0b4214c350da9b627a67987b13ec334e1de033",
+    "commit_message": "fixed #36589 -- made asserttemplateused/notused track full path for partialtemplate.\n\npreviously, asserttemplateused onl"
+  },
+  {
+    "pr_id": 2738746382,
+    "pr_number": 19724,
+    "merged_at": "2025-08-21T14:46:41Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "5bd775703c361d05458f1d81684500705d0f51ea",
+    "commit_message": "fixed #36623 -- dropped support for postgresql 14 and postgis 3.1."
+  },
+  {
+    "pr_id": 2738318864,
+    "pr_number": 19723,
+    "merged_at": "2025-08-17T05:11:05Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2732234038,
+    "pr_number": 19718,
+    "merged_at": "2025-08-11T08:22:04Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2732054341,
+    "pr_number": 19717,
+    "merged_at": "2025-08-12T07:46:20Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2731259130,
+    "pr_number": 19716,
+    "merged_at": "2025-09-23T14:52:47Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "b67a36ec6f5895f3fa6147264bae55cb014fa2a7",
+    "commit_message": "fixed #36543 -- fixed time formats for fr_ca.\n\nthanks chris anderson for the report."
+  },
+  {
+    "pr_id": 2729343072,
+    "pr_number": 19713,
+    "merged_at": "2026-02-27T12:43:46Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "3157285e27a426530ef571855e0e29c317e210df",
+    "commit_message": "fixed #27150 -- made base file objects truthy by default."
+  },
+  {
+    "pr_id": 2725340225,
+    "pr_number": 19711,
+    "merged_at": "2025-08-08T07:50:28Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "117f90dea53b0dd121eb14f07bcbadb295665ff7",
+    "commit_message": "fixed typo in django/contrib/gis/geos/geometry.py."
+  },
+  {
+    "pr_id": 2725119635,
+    "pr_number": 19709,
+    "merged_at": "2025-08-08T07:51:03Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "41bc48ac1ed1d515977ebe965993b1ef83eafd02",
+    "commit_message": "fixed #36603 -- optimized check order in loginrequiredmiddleware."
+  },
+  {
+    "pr_id": 2720865406,
+    "pr_number": 19707,
+    "merged_at": "2025-10-13T21:27:07Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2720072310,
+    "pr_number": 19705,
+    "merged_at": "2025-08-05T08:13:00Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "e664c5afa934be5a7b57576de12620071077c4fb",
+    "commit_message": "refs #36282 -- fixed prefetchrelatedmticachetests test ordering expectations."
+  },
+  {
+    "pr_id": 2716068829,
+    "pr_number": 19700,
+    "merged_at": "2025-08-08T07:52:16Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "9af8225117bbc845a41ca27332c0ee1946322b90",
+    "commit_message": "fixed #36609 -- added haitian creole (ht) language.\n\nthanks rebecca conley for the review.\n\nco-authored-by: mariusz feli"
+  },
+  {
+    "pr_id": 2715525996,
+    "pr_number": 19698,
+    "merged_at": "2025-08-05T14:36:06Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "1e7728888dbbff437ad9847c82b84feb81f785df",
+    "commit_message": "fixed #36601 -- fixed color contrast of filteredselectmultiple widget chosen labels in tabularinlines.\n\nregression in a0"
+  },
+  {
+    "pr_id": 2713135553,
+    "pr_number": 19693,
+    "merged_at": "2025-08-05T00:52:25Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "2013092b693be0ebdf36f41dc61615a2de1bbe31",
+    "commit_message": "fixed #36530 -- extended fields.e347 to check for manytomanyfield involving compositeprimarykey on either side.\n\nthanks "
+  },
+  {
+    "pr_id": 2713068382,
+    "pr_number": 19692,
+    "merged_at": "2025-08-05T14:35:04Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "0a262c8407a2f4e4971118ca435c6931c40b70ae",
+    "commit_message": "fixed #36537 -- ensured unique html ids for geometry widget option scripts in the admin.\n\nthis work amends the code from"
+  },
+  {
+    "pr_id": 2708978059,
+    "pr_number": 19688,
+    "merged_at": "2025-12-05T14:33:42Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "e92d1e3b7858981185e93d717c5727544d66b66e",
+    "commit_message": "fixed #36850 -- prevented admin filter sidebar from wrapping below the changelist.\n\nremoved flex-wrap from .changelist-f"
+  },
+  {
+    "pr_id": 2707427757,
+    "pr_number": 19685,
+    "merged_at": "2025-09-16T18:14:23Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "6d4d99b3cef4a6d931de02f89a493fb345dc438e",
+    "commit_message": "fixed #36702 -- made bulk_create() return pk values set by an expression."
+  },
+  {
+    "pr_id": 2705199022,
+    "pr_number": 19684,
+    "merged_at": "2025-07-30T00:50:16Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "9cec8d9f55d90fbc162fde23d6ea7a34e322fcae",
+    "commit_message": "fixed #36535 -- ensured compatibility with docutils 0.19 through 0.22.\n\nregression in 65ab92f6a83644bbb555d0eff3a02d8d93"
+  },
+  {
+    "pr_id": 2703362063,
+    "pr_number": 19682,
+    "merged_at": "2025-07-30T13:36:56Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "0b2493a0da14ea91027fec7c95cb63af126e3296",
+    "commit_message": "fixed #36558, refs #36366 -- fixed the \"show all\" link hover styling in admin pagination.\n\nregression in 3f59711581bd22e"
+  },
+  {
+    "pr_id": 2702126728,
+    "pr_number": 19681,
+    "merged_at": "2025-07-29T17:11:23Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "be581ff473e8ade6365975db2df602f295a4cb4b",
+    "commit_message": "fixed #36491 -- fixed crash in paralleltestrunner with --buffer.\n\nthanks javier buzzi and adam johnson for reviews.\n\nco-"
+  },
+  {
+    "pr_id": 2701525469,
+    "pr_number": 19680,
+    "merged_at": "2025-08-28T20:23:49Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "5b51e6f759f2ba993219347435149173c756c478",
+    "commit_message": "fixed #36611, refs #36580 -- added system check for multicolumn foreignobject in meta.indexes/constraints/unique_togethe"
+  },
+  {
+    "pr_id": 2701339069,
+    "pr_number": 19679,
+    "merged_at": "2025-08-05T11:34:40Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "f9a44cc0fac653f8e0c2ab1cdfb12b2cc5c63fc2",
+    "commit_message": "fixed #35453 -- made manytomanyfield.concrete false.\n\nmanytomanyfield was already excluded from fields, concrete_fields,"
+  },
+  {
+    "pr_id": 2698609757,
+    "pr_number": 19678,
+    "merged_at": "2025-08-19T14:35:56Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "2b62951fecf0024ce9ce0ce9f5be512c10747c0d",
+    "commit_message": "fixed #36659 -- fixed flatpage content selector in admin forms.css.\n\nregression in bb145e2c47d71b7f68280c00ced727442d2ef"
+  },
+  {
+    "pr_id": 2692978993,
+    "pr_number": 19673,
+    "merged_at": "2025-07-28T19:39:28Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "23b659402663dace32a04a0bf15dd13e5bfadc7e",
+    "commit_message": "fixed #36584, refs #36149 -- allowed subquery values against tuple in lookup via foreignobject."
+  },
+  {
+    "pr_id": 2691513676,
+    "pr_number": 19671,
+    "merged_at": "2025-07-30T09:09:46Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "0b2493a0da14ea91027fec7c95cb63af126e3296",
+    "commit_message": "fixed #36558, refs #36366 -- fixed the \"show all\" link hover styling in admin pagination.\n\nregression in 3f59711581bd22e"
+  },
+  {
+    "pr_id": 2688983089,
+    "pr_number": 19670,
+    "merged_at": "2025-07-24T06:39:07Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "485f483d49144a2ea5401442bc3b937a370b3ca6",
+    "commit_message": "fixed typo in django/middleware/gzip.py."
+  },
+  {
+    "pr_id": 2688974327,
+    "pr_number": 19669,
+    "merged_at": "2025-07-28T19:41:07Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "0e0b4214c350da9b627a67987b13ec334e1de033",
+    "commit_message": "fixed #36589 -- made asserttemplateused/notused track full path for partialtemplate.\n\npreviously, asserttemplateused onl"
+  },
+  {
+    "pr_id": 2688052026,
+    "pr_number": 19668,
+    "merged_at": "2025-09-26T14:47:47Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2683577220,
+    "pr_number": 19663,
+    "merged_at": "2025-07-22T11:53:56Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "4289966d1b8e848e5e460b7c782dac009d746b20",
+    "commit_message": "fixed #35859 -- added background tasks framework interface.\n\nthis work implements what was defined in dep 14\n(https://gi"
+  },
+  {
+    "pr_id": 2683266851,
+    "pr_number": 19662,
+    "merged_at": "2025-07-22T11:36:01Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "0f5b573d3d1909f8cd28aaea240a6a0e734faa92",
+    "commit_message": "fixed incorrectly concatenated string in simpleblocktagtests.test_simple_block_tag_with_context_missing_content()."
+  },
+  {
+    "pr_id": 2683232664,
+    "pr_number": 19661,
+    "merged_at": "2025-07-23T23:17:56Z",
+    "outcome": 1,
+    "trigger": "bugfix",
+    "commit_sha": "4289966d1b8e848e5e460b7c782dac009d746b20",
+    "commit_message": "fixed #35859 -- added background tasks framework interface.\n\nthis work implements what was defined in dep 14\n(https://gi"
+  },
+  {
+    "pr_id": 2679940780,
+    "pr_number": 19659,
+    "merged_at": "2025-07-30T15:32:39Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2679923082,
+    "pr_number": 19658,
+    "merged_at": "2025-07-24T06:38:43Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2677288777,
+    "pr_number": 19651,
+    "merged_at": "2025-07-23T13:09:44Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2674430371,
+    "pr_number": 19649,
+    "merged_at": "2025-07-18T11:47:44Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2671409946,
+    "pr_number": 19646,
+    "merged_at": "2025-07-16T21:11:53Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2670639933,
+    "pr_number": 19645,
+    "merged_at": "2025-09-19T18:57:05Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2670163811,
+    "pr_number": 19644,
+    "merged_at": "2025-07-18T15:29:12Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2670130463,
+    "pr_number": 19643,
+    "merged_at": "2025-08-15T00:53:15Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2669780135,
+    "pr_number": 19642,
+    "merged_at": "2025-07-16T13:33:14Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2664980107,
+    "pr_number": 19639,
+    "merged_at": "2025-08-13T02:04:09Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2662454353,
+    "pr_number": 19638,
+    "merged_at": "2025-10-14T12:13:52Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2653505210,
+    "pr_number": 19630,
+    "merged_at": "2025-07-10T16:33:00Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2652367247,
+    "pr_number": 19629,
+    "merged_at": "2025-07-09T16:01:45Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2650424145,
+    "pr_number": 19626,
+    "merged_at": "2025-07-22T10:15:10Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2650150819,
+    "pr_number": 19625,
+    "merged_at": "2025-07-09T16:10:04Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2644435523,
+    "pr_number": 19621,
+    "merged_at": "2025-07-17T20:36:02Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2644339496,
+    "pr_number": 19620,
+    "merged_at": "2025-07-25T11:59:13Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2637534433,
+    "pr_number": 19616,
+    "merged_at": "2025-07-03T13:23:25Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2635302268,
+    "pr_number": 19615,
+    "merged_at": "2025-07-02T13:25:21Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2634365425,
+    "pr_number": 19614,
+    "merged_at": "2025-08-15T08:45:02Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2629727313,
+    "pr_number": 19611,
+    "merged_at": "2025-07-31T09:12:50Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2628833215,
+    "pr_number": 19609,
+    "merged_at": "2025-12-19T17:58:29Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2625356273,
+    "pr_number": 19602,
+    "merged_at": "2025-09-22T13:52:22Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2624434165,
+    "pr_number": 19599,
+    "merged_at": "2025-08-28T16:48:32Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2621068717,
+    "pr_number": 19597,
+    "merged_at": "2025-07-23T11:17:18Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2620132193,
+    "pr_number": 19595,
+    "merged_at": "2025-09-04T16:15:45Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2619478739,
+    "pr_number": 19593,
+    "merged_at": "2025-10-20T19:21:32Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2618939006,
+    "pr_number": 19591,
+    "merged_at": "2025-07-01T18:24:08Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2617224421,
+    "pr_number": 19589,
+    "merged_at": "2025-06-26T06:54:01Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2613756097,
+    "pr_number": 19586,
+    "merged_at": "2025-07-01T18:24:34Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2608491115,
+    "pr_number": 19583,
+    "merged_at": "2025-06-21T12:51:34Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2605971679,
+    "pr_number": 19581,
+    "merged_at": "2025-06-20T15:16:22Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2604269094,
+    "pr_number": 19578,
+    "merged_at": "2025-06-25T06:58:23Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2601559524,
+    "pr_number": 19574,
+    "merged_at": "2025-08-05T14:37:43Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2598193344,
+    "pr_number": 19570,
+    "merged_at": "2025-06-18T09:25:14Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2596995985,
+    "pr_number": 19567,
+    "merged_at": "2025-06-18T12:04:39Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2592675779,
+    "pr_number": 19565,
+    "merged_at": "2025-06-30T23:15:25Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2589857690,
+    "pr_number": 19562,
+    "merged_at": "2025-07-18T08:18:23Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2588891162,
+    "pr_number": 19559,
+    "merged_at": "2025-06-13T06:11:04Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2586784862,
+    "pr_number": 19555,
+    "merged_at": "2025-06-16T08:40:29Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2584718105,
+    "pr_number": 19553,
+    "merged_at": "2025-06-16T07:25:25Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2578641639,
+    "pr_number": 19548,
+    "merged_at": "2025-06-09T20:37:40Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2578525628,
+    "pr_number": 19547,
+    "merged_at": "2025-06-09T16:32:55Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2576972410,
+    "pr_number": 19543,
+    "merged_at": "2025-06-23T12:06:14Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2576734852,
+    "pr_number": 19541,
+    "merged_at": "2025-06-10T06:40:47Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2576018103,
+    "pr_number": 19538,
+    "merged_at": "2025-06-19T10:22:23Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2575645343,
+    "pr_number": 19537,
+    "merged_at": "2025-06-10T07:50:21Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2574454731,
+    "pr_number": 19535,
+    "merged_at": "2025-06-13T06:50:25Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2572423523,
+    "pr_number": 19532,
+    "merged_at": "2025-06-09T20:40:23Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2571709791,
+    "pr_number": 19531,
+    "merged_at": "2025-06-12T06:36:54Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2571584377,
+    "pr_number": 19530,
+    "merged_at": "2025-06-11T15:09:16Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2568643059,
+    "pr_number": 19526,
+    "merged_at": "2025-06-18T06:37:44Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2567653986,
+    "pr_number": 19525,
+    "merged_at": "2025-06-06T12:05:33Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2565840869,
+    "pr_number": 19523,
+    "merged_at": "2025-06-04T08:46:49Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2565746941,
+    "pr_number": 19522,
+    "merged_at": "2025-08-21T14:47:41Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2565408851,
+    "pr_number": 19521,
+    "merged_at": "2025-06-05T11:49:39Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2559849333,
+    "pr_number": 19519,
+    "merged_at": "2025-10-27T19:11:19Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2556712116,
+    "pr_number": 19517,
+    "merged_at": "2025-11-07T21:41:58Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2552048874,
+    "pr_number": 19512,
+    "merged_at": "2025-06-16T20:41:24Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2550308206,
+    "pr_number": 19510,
+    "merged_at": "2025-06-03T01:25:14Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2546986703,
+    "pr_number": 19507,
+    "merged_at": "2025-06-03T19:10:41Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2545042107,
+    "pr_number": 19506,
+    "merged_at": "2025-06-05T20:18:56Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2544289608,
+    "pr_number": 19503,
+    "merged_at": "2025-06-06T15:40:35Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2541878824,
+    "pr_number": 19502,
+    "merged_at": "2025-06-03T15:45:15Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2538795258,
+    "pr_number": 19497,
+    "merged_at": "2025-05-23T09:19:31Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2537966020,
+    "pr_number": 19495,
+    "merged_at": "2025-06-05T07:52:56Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2537479396,
+    "pr_number": 19494,
+    "merged_at": "2025-05-23T13:17:20Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2537146270,
+    "pr_number": 19493,
+    "merged_at": "2025-07-13T16:29:35Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2536291893,
+    "pr_number": 19492,
+    "merged_at": "2025-10-14T12:10:43Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2534318923,
+    "pr_number": 19489,
+    "merged_at": "2025-05-23T14:15:59Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2531878990,
+    "pr_number": 19488,
+    "merged_at": "2025-05-23T08:22:36Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2530116731,
+    "pr_number": 19485,
+    "merged_at": "2025-05-22T18:39:32Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2526979028,
+    "pr_number": 19480,
+    "merged_at": "2025-06-18T06:36:49Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2526593481,
+    "pr_number": 19478,
+    "merged_at": "2026-01-16T15:28:14Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2524384043,
+    "pr_number": 19474,
+    "merged_at": "2025-08-21T14:48:54Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2522984466,
+    "pr_number": 19472,
+    "merged_at": "2025-05-19T08:34:16Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2520748608,
+    "pr_number": 19469,
+    "merged_at": "2025-05-16T06:19:39Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2515238677,
+    "pr_number": 19461,
+    "merged_at": "2025-05-27T12:02:55Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2514137350,
+    "pr_number": 19460,
+    "merged_at": "2025-05-13T10:02:30Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2512506235,
+    "pr_number": 19459,
+    "merged_at": "2025-08-07T12:28:45Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2512324384,
+    "pr_number": 19458,
+    "merged_at": "2025-05-14T00:42:19Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2508043298,
+    "pr_number": 19454,
+    "merged_at": "2025-07-22T09:56:58Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2507758229,
+    "pr_number": 19453,
+    "merged_at": "2025-05-12T11:33:07Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2507410883,
+    "pr_number": 19451,
+    "merged_at": "2025-05-09T11:17:58Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2507117783,
+    "pr_number": 19450,
+    "merged_at": "2025-05-15T16:02:01Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2506748864,
+    "pr_number": 19448,
+    "merged_at": "2025-06-27T16:03:17Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2505936522,
+    "pr_number": 19447,
+    "merged_at": "2025-08-12T07:47:16Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2502454471,
+    "pr_number": 19445,
+    "merged_at": "2025-05-16T06:13:58Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2499782334,
+    "pr_number": 19444,
+    "merged_at": "2025-05-06T06:20:57Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2494544375,
+    "pr_number": 19440,
+    "merged_at": "2025-05-08T10:38:13Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2492330048,
+    "pr_number": 19437,
+    "merged_at": "2025-05-23T14:23:47Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2492177153,
+    "pr_number": 19436,
+    "merged_at": "2025-05-05T14:46:51Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2489234557,
+    "pr_number": 19433,
+    "merged_at": "2025-04-29T16:45:05Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2487632910,
+    "pr_number": 19431,
+    "merged_at": "2025-04-30T13:51:50Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2485072449,
+    "pr_number": 19430,
+    "merged_at": "2025-04-30T14:55:25Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2484209353,
+    "pr_number": 19427,
+    "merged_at": "2025-05-08T10:37:11Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2484047437,
+    "pr_number": 19424,
+    "merged_at": "2025-05-27T21:20:07Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2483317264,
+    "pr_number": 19423,
+    "merged_at": "2025-05-12T16:39:20Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2483302542,
+    "pr_number": 19422,
+    "merged_at": "2025-04-27T07:03:35Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2483233330,
+    "pr_number": 19421,
+    "merged_at": "2025-04-28T20:48:19Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2483108776,
+    "pr_number": 19419,
+    "merged_at": "2025-05-14T14:04:04Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2481091818,
+    "pr_number": 19415,
+    "merged_at": "2025-04-26T14:03:06Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2477351892,
+    "pr_number": 19410,
+    "merged_at": "2025-04-24T13:11:16Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2474868909,
+    "pr_number": 19408,
+    "merged_at": "2025-05-16T13:56:17Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2470256248,
+    "pr_number": 19405,
+    "merged_at": "2025-08-19T14:36:52Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2470118378,
+    "pr_number": 19404,
+    "merged_at": "2025-04-23T19:14:05Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2469998238,
+    "pr_number": 19402,
+    "merged_at": "2025-07-18T08:16:59Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2469983890,
+    "pr_number": 19401,
+    "merged_at": "2025-05-08T15:07:10Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2469824696,
+    "pr_number": 19395,
+    "merged_at": "2025-05-14T14:00:54Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2469712112,
+    "pr_number": 19393,
+    "merged_at": "2025-06-27T18:57:02Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2468392637,
+    "pr_number": 19392,
+    "merged_at": "2025-05-13T15:41:17Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2465756011,
+    "pr_number": 19389,
+    "merged_at": "2025-04-23T01:13:39Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2465607176,
+    "pr_number": 19388,
+    "merged_at": "2025-04-23T12:01:19Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2463670143,
+    "pr_number": 19387,
+    "merged_at": "2025-04-16T18:00:49Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2460700453,
+    "pr_number": 19383,
+    "merged_at": "2025-04-16T08:21:39Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2458215492,
+    "pr_number": 19382,
+    "merged_at": "2025-04-17T15:23:06Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2457921704,
+    "pr_number": 19381,
+    "merged_at": "2025-09-18T23:44:16Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2455916574,
+    "pr_number": 19379,
+    "merged_at": "2025-05-14T14:03:01Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2454774385,
+    "pr_number": 19377,
+    "merged_at": "2025-04-12T17:39:07Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2452335162,
+    "pr_number": 19372,
+    "merged_at": "2025-04-17T10:30:20Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2450488489,
+    "pr_number": 19370,
+    "merged_at": "2025-11-07T18:17:26Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2448528882,
+    "pr_number": 19367,
+    "merged_at": "2025-04-10T01:40:55Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2448505604,
+    "pr_number": 19366,
+    "merged_at": "2025-11-07T17:23:31Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2447944785,
+    "pr_number": 19365,
+    "merged_at": "2025-04-09T09:10:09Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2446484603,
+    "pr_number": 19362,
+    "merged_at": "2025-07-22T10:14:21Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2446347517,
+    "pr_number": 19361,
+    "merged_at": "2025-06-27T15:17:45Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2445609985,
+    "pr_number": 19359,
+    "merged_at": "2025-05-04T15:46:32Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2445149637,
+    "pr_number": 19358,
+    "merged_at": "2025-04-09T07:49:18Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2445066752,
+    "pr_number": 19357,
+    "merged_at": "2025-04-09T07:46:10Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2441329230,
+    "pr_number": 19347,
+    "merged_at": "2025-04-06T07:40:12Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2441148619,
+    "pr_number": 19346,
+    "merged_at": "2025-04-05T16:47:53Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2440988126,
+    "pr_number": 19345,
+    "merged_at": "2025-04-05T16:54:08Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2440243561,
+    "pr_number": 19343,
+    "merged_at": "2025-04-07T21:48:56Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2440008036,
+    "pr_number": 19342,
+    "merged_at": "2025-04-05T19:37:45Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2438832743,
+    "pr_number": 19340,
+    "merged_at": "2025-04-07T14:11:36Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2435810444,
+    "pr_number": 19334,
+    "merged_at": "2025-04-03T16:34:57Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2435403137,
+    "pr_number": 19332,
+    "merged_at": "2025-04-11T07:04:49Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2434852914,
+    "pr_number": 19331,
+    "merged_at": "2025-04-03T20:28:29Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2431950008,
+    "pr_number": 19328,
+    "merged_at": "2025-04-01T16:52:27Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  },
+  {
+    "pr_id": 2430781437,
+    "pr_number": 19326,
+    "merged_at": "2025-04-01T17:07:05Z",
+    "outcome": 0,
+    "trigger": null,
+    "commit_sha": null,
+    "commit_message": null
+  }
+]

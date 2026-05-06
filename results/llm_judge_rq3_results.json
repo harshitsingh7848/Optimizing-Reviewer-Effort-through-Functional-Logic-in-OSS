@@ -1,0 +1,164 @@
+{
+  "metrics": {
+    "qwen2.5:7b-instruct": {
+      "rq3": "Does AI-generated risk ranking align with actual review outcomes?",
+      "gt_method": "revert commit referencing PR number within 60 days",
+      "n_prs": 500,
+      "n_positive_outcomes": 140,
+      "n_negative_outcomes": 360,
+      "llm_risk_score_correlation": {
+        "spearman_rho": -0.0835,
+        "p_value": 0.0622,
+        "significant": false
+      },
+      "feature_weighted_baseline_correlation": {
+        "spearman_rho": -0.014,
+        "p_value": 0.7546,
+        "significant": false
+      },
+      "baseline_weights": {
+        "additions": 0.4,
+        "max_nesting": 0.25,
+        "deletions": 0.2,
+        "cyclomatic_delta": 0.15
+      },
+      "per_feature_correlations": {
+        "additions": {
+          "spearman_rho": -0.0347,
+          "p_value": 0.4384,
+          "significant": false
+        },
+        "deletions": {
+          "spearman_rho": -0.0061,
+          "p_value": 0.8923,
+          "significant": false
+        },
+        "cyclomatic_delta": {
+          "spearman_rho": -0.057,
+          "p_value": 0.2034,
+          "significant": false
+        },
+        "max_nesting": {
+          "spearman_rho": 0.0257,
+          "p_value": 0.5659,
+          "significant": false
+        },
+        "logic_density": {
+          "spearman_rho": -0.0204,
+          "p_value": 0.6483,
+          "significant": false
+        }
+      },
+      "llm_vs_baseline_delta_rho": -0.0695
+    },
+    "llama3.1:8b": {
+      "rq3": "Does AI-generated risk ranking align with actual review outcomes?",
+      "gt_method": "revert commit referencing PR number within 60 days",
+      "n_prs": 500,
+      "n_positive_outcomes": 140,
+      "n_negative_outcomes": 360,
+      "llm_risk_score_correlation": {
+        "spearman_rho": -0.0113,
+        "p_value": 0.8012,
+        "significant": false
+      },
+      "feature_weighted_baseline_correlation": {
+        "spearman_rho": -0.014,
+        "p_value": 0.7546,
+        "significant": false
+      },
+      "baseline_weights": {
+        "additions": 0.4,
+        "max_nesting": 0.25,
+        "deletions": 0.2,
+        "cyclomatic_delta": 0.15
+      },
+      "per_feature_correlations": {
+        "additions": {
+          "spearman_rho": -0.0347,
+          "p_value": 0.4384,
+          "significant": false
+        },
+        "deletions": {
+          "spearman_rho": -0.0061,
+          "p_value": 0.8923,
+          "significant": false
+        },
+        "cyclomatic_delta": {
+          "spearman_rho": -0.057,
+          "p_value": 0.2034,
+          "significant": false
+        },
+        "max_nesting": {
+          "spearman_rho": 0.0257,
+          "p_value": 0.5659,
+          "significant": false
+        },
+        "logic_density": {
+          "spearman_rho": -0.0204,
+          "p_value": 0.6483,
+          "significant": false
+        }
+      },
+      "llm_vs_baseline_delta_rho": 0.0027
+    },
+    "gemma3:4b": {
+      "rq3": "Does AI-generated risk ranking align with actual review outcomes?",
+      "gt_method": "revert commit referencing PR number within 60 days",
+      "n_prs": 500,
+      "n_positive_outcomes": 140,
+      "n_negative_outcomes": 360,
+      "llm_risk_score_correlation": {
+        "spearman_rho": -0.0475,
+        "p_value": 0.289,
+        "significant": false
+      },
+      "feature_weighted_baseline_correlation": {
+        "spearman_rho": -0.014,
+        "p_value": 0.7546,
+        "significant": false
+      },
+      "baseline_weights": {
+        "additions": 0.4,
+        "max_nesting": 0.25,
+        "deletions": 0.2,
+        "cyclomatic_delta": 0.15
+      },
+      "per_feature_correlations": {
+        "additions": {
+          "spearman_rho": -0.0347,
+          "p_value": 0.4384,
+          "significant": false
+        },
+        "deletions": {
+          "spearman_rho": -0.0061,
+          "p_value": 0.8923,
+          "significant": false
+        },
+        "cyclomatic_delta": {
+          "spearman_rho": -0.057,
+          "p_value": 0.2034,
+          "significant": false
+        },
+        "max_nesting": {
+          "spearman_rho": 0.0257,
+          "p_value": 0.5659,
+          "significant": false
+        },
+        "logic_density": {
+          "spearman_rho": -0.0204,
+          "p_value": 0.6483,
+          "significant": false
+        }
+      },
+      "llm_vs_baseline_delta_rho": -0.0335
+    }
+  },
+  "outcome_summary": {
+    "total_prs_labeled": 500,
+    "positive": 140,
+    "negative": 360,
+    "window_days": 60,
+    "gt_method": "revert-only"
+  }
+}
