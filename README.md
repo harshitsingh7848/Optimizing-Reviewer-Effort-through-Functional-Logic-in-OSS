@@ -55,7 +55,7 @@ config = {
 }
 ```
 
-Generate a personal access token at <https://github.com/settings/tokens> with `public_repo` scope. The token is only needed for fetching PR data; if `data/pr_dataset_django.json` is already present, you can skip data collection and the token is not required.
+Generate a personal access token at <https://github.com/settings/personal-access-tokens> with `public_repo` scope. The token is only needed for fetching PR data; if `data/pr_dataset_django.json` is already present, you can skip data collection and the token is not required.
 
 ---
 
