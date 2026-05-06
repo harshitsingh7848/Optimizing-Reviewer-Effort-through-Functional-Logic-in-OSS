@@ -4,17 +4,19 @@ LLM-as-a-Judge evaluation across three research questions on 500 PRs from `djang
 
 ---
 
-## Quick Start (Demo)
+## Pre-computed Artifacts
 
-If you just want to verify the pipeline runs end-to-end, run the demo. It fetches 10 PRs, scores them with Gemma3-4B, and produces plots in about 3 minutes.
+This repository ships the artifacts referenced in the paper, so the numbers can be verified without re-running the full pipeline:
 
-```bash
-python run_demo.py
-```
+- `data/pr_dataset_django.json` collected and filtered PRs
+- `data/rq3_outcome_labels.json` ground-truth labels for RQ3
+- `results/llm_judge_results_django.json` per-PR risk scores and rationales (RQ1)
+- `results/llm_judge_rq2_results.json` segment-level results (RQ2)
+- `results/llm_judge_rq3_results.json` post-merge correlation outputs (RQ3)
+- `results/segment_dataset.json` extracted diff hunks used for RQ2
+- `figures/rq1/`, `figures/rq2/`, `figures/rq3/` paper figures
 
-Outputs land in `demo/data/`, `demo/results/`, and `demo/figures_live/`.
-
-For full reproduction of the paper results, follow the sections below.
+To regenerate any of these from scratch, follow the "Full Reproduction" section below.
 
 ---
 
@@ -44,7 +46,7 @@ Make sure `ollama serve` is running in the background before launching any RQ1 c
 
 ### 3. Add a GitHub token
 
-Create `src/config.py` (or edit it if it already exists) with the following contents:
+Create `src/config.py` with the following contents:
 
 ```python
 config = {
@@ -53,11 +55,11 @@ config = {
 }
 ```
 
-Generate a personal access token at <https://github.com/settings/tokens> with `public_repo` scope. The token is only needed for fetching PR data; if `data/` already contains the pre-collected dataset, you can skip data collection and the token is not required.
+Generate a personal access token at <https://github.com/settings/tokens> with `public_repo` scope. The token is only needed for fetching PR data; if `data/pr_dataset_django.json` is already present, you can skip data collection and the token is not required.
 
 ---
 
-## How to Run (Full Reproduction)
+## Full Reproduction
 
 All commands run from the project root.
 
@@ -96,7 +98,6 @@ python -m evaluation.get_plots_rq3
 
 ```
 .
-├── run_demo.py            quick-start wrapper for RQ1
 ├── src/                   data collection and feature extraction
 ├── evaluation/            evaluation scripts and plot generation
 ├── notebooks/             RQ2 and RQ3 Colab notebooks
@@ -109,7 +110,7 @@ python -m evaluation.get_plots_rq3
 
 ## Notes
 
-- If `data/` already contains the JSON dataset, skip the collection step in RQ1. Data collection is the slowest part of the pipeline.
+- The pre-computed JSONs and figures listed at the top let a reviewer verify our results in seconds. The "Full Reproduction" steps regenerate them from scratch.
 - `src/get_pull_request_data.py` checkpoints every 100 PRs and supports resume, so it is safe to interrupt and restart.
 - GitHub's secondary rate limit can trigger around PR 80 to 100 on commit-history queries. The RQ3 notebook handles this with `Retry-After` parsing; for RQ1 collection, the script sleeps and retries with exponential backoff.
 - LLM temperature is fixed at `0.1` throughout for consistent scoring.
