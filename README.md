@@ -80,7 +80,10 @@ python -m evaluation.generate_plots --rq1 results/llm_judge_results_django.json 
 
 Open `notebooks/RQ2_LLM_Judge.ipynb` in Google Colab. Upload `data/pr_dataset_django.json` when prompted. Run all cells. Download `results/llm_judge_rq2_results.json` when complete.
 
-RQ2 requires a HuggingFace token with access to Llama 3.1 (a gated model). Add it to Colab Secrets as `HF_TOKEN`.
+RQ2 requires two Colab Secrets:
+
+- `HF_TOKEN`: a HuggingFace token with access to Llama 3.1 (a gated model)
+- `GITHUB_TOKEN`: a GitHub personal access token with `public_repo` scope, used to fetch segment-level inline reviewer comments via the GitHub API
 
 ### RQ3: Post-merge outcome correlation (Colab)
 
